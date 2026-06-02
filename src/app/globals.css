@@ -626,6 +626,103 @@ p {
   min-height: 500px;
 }
 
+.about-hero {
+  padding-bottom: clamp(4rem, 7vw, 6.5rem);
+}
+
+.about-hero .page-hero-inner {
+  align-items: center;
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+.about-hero .portrait-frame {
+  min-height: min(650px, 70svh);
+}
+
+.about-proof-section {
+  padding-top: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.why-listen-panel {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+}
+
+.why-listen-panel h2 {
+  color: var(--cn-deep-gold);
+  margin-top: 0.25rem;
+}
+
+.why-listen-image {
+  min-height: 460px;
+}
+
+.centered-page-hero {
+  align-items: center;
+  grid-template-columns: minmax(0, 0.84fr) minmax(420px, 0.76fr);
+}
+
+.contact-hero .page-hero-inner > div:first-child,
+.newsletter-hero .page-hero-inner > div:first-child,
+.newsletter-hero .page-hero-card,
+.final-cta-band {
+  text-align: center;
+}
+
+.contact-hero .page-hero-inner > div:first-child p,
+.newsletter-hero .page-hero-inner > div:first-child p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-hero .contact-list {
+  justify-items: center;
+}
+
+.contact-hero .contact-form,
+.professional-referral-section .contact-form {
+  align-self: center;
+}
+
+.contact-secondary-section {
+  align-items: stretch;
+}
+
+.contact-secondary-section .side-panel,
+.newsletter-hero .page-hero-card,
+.final-cta-band .newsletter-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-hero-inner {
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.55fr);
+}
+
+.newsletter-hero .tag-list {
+  justify-content: center;
+}
+
+.final-cta-band .newsletter-form {
+  text-align: left;
+}
+
+.final-cta-band .hero-actions {
+  justify-content: center;
+}
+
+.professional-referral-section {
+  align-items: center;
+  grid-template-columns: minmax(320px, 0.72fr) minmax(460px, 1fr);
+  padding-top: clamp(1rem, 3vw, 2rem);
+}
+
+.professional-referral-section .rich-panel {
+  max-width: 720px;
+}
+
 .benefit-list,
 .markdown-content ul {
   display: grid;
@@ -1034,12 +1131,24 @@ textarea {
 
   .hero-section,
   .page-hero-inner,
+  .centered-page-hero,
   .split-section,
   .content-section,
   .founder-band,
   .consultation-section,
+  .professional-referral-section,
+  .why-listen-panel,
   .footer-inner {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero .portrait-frame,
+  .why-listen-image {
+    min-height: 520px;
+  }
+
+  .professional-referral-section .rich-panel {
+    max-width: none;
   }
 
   .trust-strip,
@@ -1089,5 +1198,10 @@ textarea {
   .footer-bottom {
     display: grid;
     gap: 0.5rem;
+  }
+
+  .about-hero .portrait-frame,
+  .why-listen-image {
+    min-height: 430px;
   }
 }

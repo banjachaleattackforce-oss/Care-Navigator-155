@@ -21,4 +21,12 @@ describe("Netlify form registration", () => {
     expect(cmsConfig).toContain("newsletter");
     expect(cmsConfig).toContain("custom-link");
   });
+
+  it("uses the static Decap CMS admin entry instead of an app route loading shell", () => {
+    const adminHtml = fs.readFileSync(path.join(process.cwd(), "public", "admin", "index.html"), "utf8");
+
+    expect(adminHtml).toContain("netlify-identity-widget.js");
+    expect(adminHtml).toContain("decap-cms@3.7.3");
+    expect(fs.existsSync(path.join(process.cwd(), "src", "app", "admin", "page.tsx"))).toBe(false);
+  });
 });

@@ -27,8 +27,12 @@ describe("UI structure", () => {
   it("uses unique founder gallery images on the about page", () => {
     const aboutPage = readProjectFile("src/app/about/page.tsx");
     const imageSources = Array.from(aboutPage.matchAll(/src="([^"]*yvonne-[^"]+)"/g)).map((match) => match[1]);
-    const gallerySources = imageSources.slice(1);
+    const galleryBlock = aboutPage.slice(aboutPage.indexOf('className="founder-gallery"'));
+    const gallerySources = Array.from(galleryBlock.matchAll(/src="([^"]*yvonne-[^"]+)"/g)).map((match) => match[1]);
 
+    expect(imageSources[0]).toBe("/images/yvonne-red-dress-alt.jpg");
+    expect(aboutPage).toContain("Why listen to me?");
+    expect(aboutPage).toContain("Over 1.2 million hours of care delivered since 2009");
     expect(gallerySources).toEqual([
       "/images/yvonne-polka-dot.jpg",
       "/images/yvonne-red-dress.jpg",

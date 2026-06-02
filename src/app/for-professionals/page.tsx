@@ -29,7 +29,7 @@ export default function ForProfessionalsPage() {
           </aside>
         </div>
       </section>
-      <section className="section content-section">
+      <section className="section content-section professional-referral-section">
         <article className="rich-panel">
           <span className="eyebrow">Professional referrals</span>
           <h2>A clear route when care decisions sit beside professional advice.</h2>

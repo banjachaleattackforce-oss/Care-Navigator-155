@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="page-hero-inner">
+      <section className="page-hero contact-hero">
+        <div className="page-hero-inner centered-page-hero">
           <div>
             <span className="eyebrow">Contact</span>
             <h1>Start with a free initial consultation.</h1>
@@ -25,7 +25,7 @@ export default function ContactPage() {
           <ConsultationForm />
         </div>
       </section>
-      <section className="section content-section">
+      <section className="section content-section contact-secondary-section">
         <article className="rich-panel">
           <span className="eyebrow">Professional referral</span>
           <h2>Refer a client or request professional input.</h2>

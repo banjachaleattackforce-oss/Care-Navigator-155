@@ -16,8 +16,8 @@ export default function NewsPage() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="page-hero-inner">
+      <section className="page-hero newsletter-hero">
+        <div className="page-hero-inner centered-page-hero newsletter-hero-inner">
           <div>
             <span className="eyebrow">Newsletter and updates</span>
             <h1>Care funding notes for families and professionals.</h1>
