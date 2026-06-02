@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.env
+.env.local
+.netlify
+*.tsbuildinfo
+.playwright-mcp
+*.log
+care-navigator-*.png
+the-care-navigator-home.png
