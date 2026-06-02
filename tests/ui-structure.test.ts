@@ -40,4 +40,19 @@ describe("UI structure", () => {
     ]);
     expect(new Set(gallerySources).size).toBe(gallerySources.length);
   });
+
+  it("uses the final contact triangle and centred article hero layout hooks", () => {
+    const contactPage = readProjectFile("src/app/contact/page.tsx");
+    const articlePage = readProjectFile("src/app/news/[slug]/page.tsx");
+    const aboutPage = readProjectFile("src/app/about/page.tsx");
+    const css = readProjectFile("src/app/globals.css");
+
+    expect(contactPage).toContain("contact-triangle");
+    expect(contactPage).toContain("contact-primary-card");
+    expect(contactPage).toContain("contact-secondary-grid");
+    expect(articlePage).toContain("article-hero");
+    expect(aboutPage).toContain("about-hero-portrait");
+    expect(css).toContain(".article-hero .page-hero-inner");
+    expect(css).toContain(".about-hero-portrait img");
+  });
 });

@@ -5,10 +5,79 @@ import { useState } from "react";
 
 type Status = "idle" | "sending" | "error";
 
+type FormDebugPayload = {
+  label: string;
+  formName: string;
+  submitUrl: string;
+  httpStatus: number | null;
+  statusText: string | null;
+  responseBodyPreview: string | null;
+  submittedFieldNames: string[];
+  redactedFieldSummary: Record<string, { present: boolean; length: number; kind: string }>;
+  timestamp: string;
+  pageUrl: string;
+  errorMessage: string;
+  errorStack: string | null;
+};
+
+declare global {
+  interface Window {
+    __CARE_NAVIGATOR_LAST_FORM_DEBUG__?: FormDebugPayload;
+  }
+}
+
 function encodeForm(formData: FormData) {
   const body = new URLSearchParams();
   formData.forEach((value, key) => body.append(key, value.toString()));
   return body.toString();
+}
+
+function buildRedactedSummary(formData: FormData) {
+  const summary: FormDebugPayload["redactedFieldSummary"] = {};
+
+  formData.forEach((value, key) => {
+    const textValue = value instanceof File ? value.name : value.toString();
+    summary[key] = {
+      present: textValue.length > 0,
+      length: textValue.length,
+      kind: value instanceof File ? "file" : "text"
+    };
+  });
+
+  return summary;
+}
+
+function logFormDebug({
+  form,
+  formData,
+  response,
+  responseBody,
+  error
+}: {
+  form: HTMLFormElement;
+  formData: FormData;
+  response: Response | null;
+  responseBody: string | null;
+  error: unknown;
+}) {
+  const formName = formData.get("form-name")?.toString() || form.name || "unknown-form";
+  const debugPayload: FormDebugPayload = {
+    label: "Care Navigator form debug",
+    formName,
+    submitUrl: response?.url || form.action || window.location.href,
+    httpStatus: response?.status ?? null,
+    statusText: response?.statusText || null,
+    responseBodyPreview: responseBody ? responseBody.slice(0, 500) : null,
+    submittedFieldNames: Array.from(new Set(Array.from(formData.keys()))),
+    redactedFieldSummary: buildRedactedSummary(formData),
+    timestamp: new Date().toISOString(),
+    pageUrl: window.location.href,
+    errorMessage: error instanceof Error ? error.message : String(error),
+    errorStack: error instanceof Error ? error.stack || null : null
+  };
+
+  window.__CARE_NAVIGATOR_LAST_FORM_DEBUG__ = debugPayload;
+  console.error("[Care Navigator form debug]", debugPayload);
 }
 
 function useNetlifySubmit() {
@@ -18,17 +87,23 @@ function useNetlifySubmit() {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
+    let response: Response | null = null;
+    let responseBody: string | null = null;
     setStatus("sending");
 
     try {
-      const response = await fetch("/", {
+      response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encodeForm(formData)
       });
-      if (!response.ok) throw new Error("Form submission failed");
+      if (!response.ok) {
+        responseBody = await response.text();
+        throw new Error(`Form submission failed with ${response.status} ${response.statusText}`);
+      }
       window.location.href = "/thank-you";
-    } catch {
+    } catch (error) {
+      logFormDebug({ form, formData, response, responseBody, error });
       setStatus("error");
     }
   }

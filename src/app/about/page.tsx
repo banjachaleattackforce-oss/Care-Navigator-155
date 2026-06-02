@@ -30,7 +30,7 @@ export default function AboutPage() {
             <p>{founderCopy}</p>
             <ButtonLink href={brand.bookingUrl}>Book a Free Initial Consultation</ButtonLink>
           </div>
-          <div className="portrait-frame">
+          <div className="portrait-frame about-hero-portrait">
             <Image src="/images/yvonne-red-dress-alt.jpg" alt="Yvonne Brown, founder of Care Navigator, seated in a red dress" fill priority sizes="(max-width: 900px) 100vw, 520px" />
           </div>
         </div>

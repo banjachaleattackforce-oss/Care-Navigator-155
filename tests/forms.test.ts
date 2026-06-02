@@ -29,4 +29,13 @@ describe("Netlify form registration", () => {
     expect(adminHtml).toContain("decap-cms@3.7.3");
     expect(fs.existsSync(path.join(process.cwd(), "src", "app", "admin", "page.tsx"))).toBe(false);
   });
+
+  it("logs redacted browser debug output for failed Netlify submissions", () => {
+    const formsComponent = fs.readFileSync(path.join(process.cwd(), "src", "components", "ContactForms.tsx"), "utf8");
+
+    expect(formsComponent).toContain("[Care Navigator form debug]");
+    expect(formsComponent).toContain("__CARE_NAVIGATOR_LAST_FORM_DEBUG__");
+    expect(formsComponent).toContain("redactedFieldSummary");
+    expect(formsComponent).toContain("responseBodyPreview");
+  });
 });

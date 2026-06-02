@@ -639,6 +639,10 @@ p {
   min-height: min(650px, 70svh);
 }
 
+.about-hero-portrait img {
+  object-position: 50% 18%;
+}
+
 .about-proof-section {
   padding-top: clamp(0.5rem, 2vw, 1.5rem);
 }
@@ -681,6 +685,68 @@ p {
   justify-items: center;
 }
 
+.contact-triangle {
+  display: grid;
+  gap: clamp(1.75rem, 3.5vw, 3rem);
+  justify-items: center;
+  padding-bottom: clamp(2rem, 4vw, 3.5rem);
+  padding-top: clamp(2rem, 5vw, 4.5rem);
+}
+
+.contact-intro {
+  max-width: 980px;
+  text-align: center;
+}
+
+.contact-intro p {
+  color: var(--cn-muted);
+  font-size: 1.15rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
+}
+
+.contact-primary-card {
+  width: min(100%, 980px);
+}
+
+#consultation {
+  scroll-margin-top: calc(var(--header-height) + 2rem);
+}
+
+.contact-primary-card .contact-form {
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.contact-secondary-grid {
+  align-items: start;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 1540px);
+}
+
+.contact-secondary-grid .rich-panel,
+.contact-secondary-grid .side-panel {
+  align-self: start;
+  display: grid;
+  gap: 1.25rem;
+  min-height: 0;
+}
+
+.contact-secondary-grid .contact-form,
+.contact-secondary-grid .newsletter-form {
+  margin-top: 0;
+}
+
+.contact-secondary-grid .side-panel {
+  text-align: left;
+}
+
+.contact-secondary-grid .newsletter-form {
+  max-width: none;
+}
+
 .contact-hero .contact-form,
 .professional-referral-section .contact-form {
   align-self: center;
@@ -721,6 +787,27 @@ p {
 
 .professional-referral-section .rich-panel {
   max-width: 720px;
+}
+
+.article-hero .page-hero-inner {
+  display: block;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.article-hero .page-hero-inner > div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 920px;
+}
+
+.article-hero p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-hero .article-meta {
+  justify-content: center;
 }
 
 .benefit-list,
@@ -1138,6 +1225,7 @@ textarea {
   .consultation-section,
   .professional-referral-section,
   .why-listen-panel,
+  .contact-secondary-grid,
   .footer-inner {
     grid-template-columns: 1fr;
   }
@@ -1145,6 +1233,14 @@ textarea {
   .about-hero .portrait-frame,
   .why-listen-image {
     min-height: 520px;
+  }
+
+  .contact-triangle {
+    justify-items: stretch;
+  }
+
+  .contact-intro {
+    justify-self: center;
   }
 
   .professional-referral-section .rich-panel {
@@ -1203,5 +1299,11 @@ textarea {
   .about-hero .portrait-frame,
   .why-listen-image {
     min-height: 430px;
+  }
+
+  .contact-primary-card .contact-form,
+  .contact-secondary-grid .rich-panel,
+  .contact-secondary-grid .side-panel {
+    padding: 1.2rem;
   }
 }
