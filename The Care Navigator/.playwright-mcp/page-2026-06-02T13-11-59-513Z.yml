@@ -1,0 +1,97 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Care Navigator home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - strong [ref=e6]: Care Navigator
+          - generic [ref=e7]: Care funding guidance
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e11] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e12] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e14] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "Book consultation" [ref=e17] [cursor=pointer]:
+        - /url: /contact#consultation
+  - main [ref=e18]:
+    - generic [ref=e21]:
+      - generic [ref=e22]: NHS CHC
+      - heading "Understanding NHS Continuing Healthcare" [level=1] [ref=e23]
+      - paragraph [ref=e24]: A plain-English starting point for families who have heard about NHS Continuing Healthcare and need to understand the route.
+      - generic [ref=e25]: 2 June 2026 · Yvonne Brown
+    - article [ref=e26]:
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: NHS Continuing Healthcare, often shortened to CHC, is a package of care arranged and funded by the NHS for adults with a primary health need.
+        - paragraph [ref=e29]: The process can involve a Checklist screening stage and, where the threshold is met, a full assessment using the Decision Support Tool. A positive Checklist does not automatically mean someone is eligible for CHC. It means the person should receive a full assessment.
+        - heading "What families can prepare" [level=2] [ref=e30]
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: "- Recent care plans and review notes"
+          - list [ref=e33]:
+            - listitem [ref=e34]: Hospital discharge notes
+            - listitem [ref=e35]: Medication records
+            - listitem [ref=e36]: Incident, falls or risk records
+            - listitem [ref=e37]: Family observations about daily needs
+            - listitem [ref=e38]: Decision letters and assessment paperwork
+        - paragraph [ref=e39]: The aim is not to make the story more dramatic. The aim is to make needs, risks and evidence clear.
+      - generic [ref=e40]:
+        - link "NHS CHC" [ref=e41] [cursor=pointer]:
+          - /url: /news/tags/nhs-chc
+        - link "Care funding" [ref=e42] [cursor=pointer]:
+          - /url: /news/tags/care-funding
+      - generic "Article next steps" [ref=e43]:
+        - complementary [ref=e44]:
+          - img [ref=e46]
+          - heading "Not sure where to start with CHC?" [level=2] [ref=e49]
+          - paragraph [ref=e50]: Book a calm first conversation before the next assessment, review or funding decision.
+          - link "Book a Free Initial Consultation" [ref=e51] [cursor=pointer]:
+            - /url: /contact#consultation
+            - text: Book a Free Initial Consultation
+            - img [ref=e52]
+  - contentinfo [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - text: Care Funding Guidance
+        - heading "Care Navigator" [level=2] [ref=e57]
+        - paragraph [ref=e58]: Navigate funding. Protect care. Support decisions.
+        - paragraph [ref=e59]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - navigation "Footer navigation" [ref=e60]:
+        - link "Home" [ref=e61] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e62] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e63] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e64] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e65] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e66] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e67] [cursor=pointer]:
+          - /url: /contact
+        - link "Privacy" [ref=e68] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e69]:
+        - link "07711 494588" [ref=e70] [cursor=pointer]:
+          - /url: tel:+447711494588
+          - img [ref=e71]
+          - text: 07711 494588
+        - link "hello@carenavigator.org" [ref=e73] [cursor=pointer]:
+          - /url: mailto:hello@carenavigator.org
+          - img [ref=e74]
+          - text: hello@carenavigator.org
+    - generic [ref=e77]:
+      - generic [ref=e78]: © 2026 Care Navigator. All rights reserved.
+      - generic [ref=e79]: Calm · Clear · Evidence-led · Family-centred
+  - button "Open Next.js Dev Tools" [ref=e85] [cursor=pointer]:
+    - img [ref=e86]

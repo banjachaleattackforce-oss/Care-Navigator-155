@@ -1,0 +1,32 @@
+{
+  "name": "the-care-navigator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4010",
+    "build": "next build",
+    "start": "next start -p 4010",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "netlify:login": "netlify login",
+    "deploy:preview": "npm run build && netlify deploy --dir=out",
+    "deploy:prod": "npm run build && netlify deploy --prod --dir=out"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "netlify-cli": "^26.1.0",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  },
+  "overrides": {
+    "postcss": "^8.5.15"
+  }
+}

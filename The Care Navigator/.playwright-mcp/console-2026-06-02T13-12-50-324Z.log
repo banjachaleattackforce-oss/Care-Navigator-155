@@ -1,0 +1,39 @@
+[     157ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1708ms] [LOG] [Fast Refresh] done in 1664ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1745ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4010/admin:0
+[    1808ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1828ms] [LOG] [HMR] connected @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   21845ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   21925ms] [LOG] [Fast Refresh] done in 184ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   22041ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   22939ms] [LOG] [Fast Refresh] done in 1014ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   23162ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   23521ms] [LOG] [Fast Refresh] done in 465ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   23709ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   23713ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   23879ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   23955ms] [LOG] [Fast Refresh] done in 183ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   24056ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   24565ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   24672ms] [LOG] [HMR] connected @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   25751ms] [LOG] decap-cms-app 3.13.0 @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   25797ms] [LOG] decap-cms-core 3.14.0 @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   25801ms] [LOG] decap-cms 3.13.0 @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   25989ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   26066ms] [LOG] [Fast Refresh] done in 184ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   26257ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4010/config.yml:0
+[   26282ms] Uncaught (in promise) Error: Failed to load config.yml (404)
+    at <anonymous> (https://unpkg.com/decap-cms@%5E3.0.0/dist/decap-cms.js:16:42521)
+[   26657ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   26691ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   26827ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   26913ms] [LOG] [Fast Refresh] done in 195ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27093ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27118ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27234ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27308ms] [LOG] [Fast Refresh] done in 178ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27481ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27488ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27607ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   27615ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[   28169ms] [LOG] Manually initializing identity widget @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477

@@ -1,0 +1,151 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Care Navigator home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - strong [ref=e6]: Care Navigator
+          - generic [ref=e7]: Care funding guidance
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e11] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e12] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e14] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "Book consultation" [ref=e17] [cursor=pointer]:
+        - /url: /contact#consultation
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: For families
+        - heading "Clear care-funding guidance when your family has too much to carry." [level=1] [ref=e23]
+        - paragraph [ref=e24]: Support for adult children, spouses, attorneys and relatives facing CHC, discharge, care-package and self-funding decisions.
+        - link "Book a Free Initial Consultation" [ref=e25] [cursor=pointer]:
+          - /url: /contact#consultation
+      - complementary [ref=e26]:
+        - heading "Common starting points" [level=2] [ref=e27]
+        - generic [ref=e28]:
+          - article [ref=e29]:
+            - heading "A parent has been discharged or may be discharged soon" [level=3] [ref=e30]:
+              - button "A parent has been discharged or may be discharged soon" [ref=e31] [cursor=pointer]:
+                - generic [ref=e32]: A parent has been discharged or may be discharged soon
+                - img [ref=e33]
+          - article [ref=e35]:
+            - heading "The family is unsure whether CHC funding has been considered properly" [level=3] [ref=e36]:
+              - button "The family is unsure whether CHC funding has been considered properly" [ref=e37] [cursor=pointer]:
+                - generic [ref=e38]: The family is unsure whether CHC funding has been considered properly
+                - img [ref=e39]
+          - article [ref=e41]:
+            - heading "Care needs have increased and the current package feels unsafe" [level=3] [ref=e42]:
+              - button "Care needs have increased and the current package feels unsafe" [ref=e43] [cursor=pointer]:
+                - generic [ref=e44]: Care needs have increased and the current package feels unsafe
+                - img [ref=e45]
+          - article [ref=e47]:
+            - heading "A self-funding decision needs to be made without panic" [level=3] [ref=e48]:
+              - button "A self-funding decision needs to be made without panic" [ref=e49] [cursor=pointer]:
+                - generic [ref=e50]: A self-funding decision needs to be made without panic
+                - img [ref=e51]
+          - article [ref=e53]:
+            - heading "A decision letter, review or appeal needs a clear response" [level=3] [ref=e54]:
+              - button "A decision letter, review or appeal needs a clear response" [ref=e55] [cursor=pointer]:
+                - generic [ref=e56]: A decision letter, review or appeal needs a clear response
+                - img [ref=e57]
+    - generic [ref=e59]:
+      - article [ref=e60]:
+        - heading "Initial Case Review" [level=2] [ref=e61]
+        - paragraph [ref=e62]: A structured first review to understand the care situation, funding questions, documents available and safest next steps.
+        - link "Start with an Initial Case Review" [ref=e63] [cursor=pointer]:
+          - /url: /services/initial-case-review
+      - article [ref=e64]:
+        - heading "NHS CHC Eligibility Review" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Independent support to understand whether NHS Continuing Healthcare may be relevant and how evidence maps to the CHC process.
+        - link "Review CHC Eligibility" [ref=e67] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+      - article [ref=e68]:
+        - heading "CHC Evidence Preparation" [level=2] [ref=e69]
+        - paragraph [ref=e70]: Organise care records, clinical notes and family observations into a clear evidence pack for assessment or review.
+        - link "Prepare CHC Evidence" [ref=e71] [cursor=pointer]:
+          - /url: /services/chc-evidence-preparation
+      - article [ref=e72]:
+        - heading "MDT Representation" [level=2] [ref=e73]
+        - paragraph [ref=e74]: Preparation and meeting support for Multi-Disciplinary Team discussions, reviews and care-planning meetings.
+        - link "Prepare for an MDT Meeting" [ref=e75] [cursor=pointer]:
+          - /url: /services/mdt-representation
+      - article [ref=e76]:
+        - heading "Appeals Support" [level=2] [ref=e77]
+        - paragraph [ref=e78]: Structured help when a CHC or care-funding decision does not seem to reflect the person’s needs.
+        - link "Review a CHC Decision" [ref=e79] [cursor=pointer]:
+          - /url: /services/appeals-support
+      - article [ref=e80]:
+        - heading "Self-Funding Care Planning" [level=2] [ref=e81]
+        - paragraph [ref=e82]: Independent guidance for families paying privately for care who need to reduce risk and plan with more confidence.
+        - link "Plan Self-Funded Care" [ref=e83] [cursor=pointer]:
+          - /url: /services/self-funding-care-planning
+      - article [ref=e84]:
+        - heading "Care Package Review" [level=2] [ref=e85]
+        - paragraph [ref=e86]: Review whether a current care package reflects safety, dignity, routines, family concerns and changing needs.
+        - link "Review a Care Package" [ref=e87] [cursor=pointer]:
+          - /url: /services/care-package-review
+      - article [ref=e88]:
+        - heading "Hospital Discharge Planning" [level=2] [ref=e89]
+        - paragraph [ref=e90]: Practical planning support when discharge, short-term care, rehabilitation or longer-term funding decisions are moving quickly.
+        - link "Plan a Safer Discharge" [ref=e91] [cursor=pointer]:
+          - /url: /services/hospital-discharge-planning
+      - article [ref=e92]:
+        - heading "Complex Care Planning" [level=2] [ref=e93]
+        - paragraph [ref=e94]: Founder-led guidance where care needs, risks, family decisions and funding routes are complex or changing.
+        - link "Map Complex Care Needs" [ref=e95] [cursor=pointer]:
+          - /url: /services/complex-care-planning
+    - generic [ref=e96]:
+      - generic [ref=e97]: Next step
+      - heading "Bring the care-funding picture into focus." [level=2] [ref=e98]
+      - paragraph [ref=e99]: Start with one calm conversation, then decide whether an evidence review, CHC route plan or complex care planning support is the right next step.
+      - link "Book a Free Initial Consultation" [ref=e100] [cursor=pointer]:
+        - /url: /contact#consultation
+  - contentinfo [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - text: Care Funding Guidance
+        - heading "Care Navigator" [level=2] [ref=e104]
+        - paragraph [ref=e105]: Navigate funding. Protect care. Support decisions.
+        - paragraph [ref=e106]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - navigation "Footer navigation" [ref=e107]:
+        - link "Home" [ref=e108] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e109] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e110] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e111] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e112] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e113] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e114] [cursor=pointer]:
+          - /url: /contact
+        - link "Privacy" [ref=e115] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e116]:
+        - link "07711 494588" [ref=e117] [cursor=pointer]:
+          - /url: tel:+447711494588
+          - img [ref=e118]
+          - text: 07711 494588
+        - link "hello@carenavigator.org" [ref=e120] [cursor=pointer]:
+          - /url: mailto:hello@carenavigator.org
+          - img [ref=e121]
+          - text: hello@carenavigator.org
+    - generic [ref=e124]:
+      - generic [ref=e125]: © 2026 Care Navigator. All rights reserved.
+      - generic [ref=e126]: Calm · Clear · Evidence-led · Family-centred
+  - button "Open Next.js Dev Tools" [ref=e132] [cursor=pointer]:
+    - img [ref=e133]

@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Care Navigator home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - strong [ref=e6]: Care Navigator
+          - generic [ref=e7]: Care funding guidance
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e11] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e12] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e14] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "Book consultation" [ref=e17] [cursor=pointer]:
+        - /url: /contact#consultation
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Assessment meetings
+        - heading "MDT Representation" [level=1] [ref=e23]
+        - paragraph [ref=e24]: Preparation and meeting support for Multi-Disciplinary Team discussions, reviews and care-planning meetings.
+        - generic [ref=e25]:
+          - link "Prepare for an MDT Meeting" [ref=e26] [cursor=pointer]:
+            - /url: /contact#consultation
+          - link "07711 494588" [ref=e27] [cursor=pointer]:
+            - /url: tel:+447711494588
+            - img [ref=e28]
+            - text: 07711 494588
+      - complementary [ref=e30]:
+        - img [ref=e32]
+        - heading "Who this helps" [level=2] [ref=e37]
+        - paragraph [ref=e38]: Families and attorneys attending MDT, CHC, discharge or care package meetings.
+    - generic [ref=e39]:
+      - article [ref=e40]:
+        - generic [ref=e41]: How we help
+        - heading "Structured guidance, clear evidence and practical next steps." [level=2] [ref=e42]
+        - paragraph [ref=e43]: CHC and complex care meetings can be emotional and technical. We help families prepare the right documents, frame concerns calmly, and keep the conversation focused on needs, risks, evidence and next actions.
+        - list [ref=e44]:
+          - listitem [ref=e45]:
+            - img [ref=e46]
+            - generic [ref=e49]: Prepare a meeting brief and question list
+          - listitem [ref=e50]:
+            - img [ref=e51]
+            - generic [ref=e54]: Support clear presentation of needs and family concerns
+          - listitem [ref=e55]:
+            - img [ref=e56]
+            - generic [ref=e59]: Record next actions and follow-up evidence requests
+        - paragraph [ref=e60]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - complementary [ref=e61]:
+        - generic [ref=e62]: Start here
+        - heading "Prepare for an MDT Meeting" [level=2] [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - text: Name
+              - textbox "Name" [ref=e67]
+            - generic [ref=e68]:
+              - text: Phone
+              - textbox "Phone" [ref=e69]
+            - generic [ref=e70]:
+              - text: Email
+              - textbox "Email" [ref=e71]
+            - generic [ref=e72]:
+              - text: Postcode
+              - textbox "Postcode" [ref=e73]
+            - generic [ref=e74]:
+              - text: Relationship to person needing support
+              - combobox "Relationship to person needing support" [ref=e75]:
+                - option "Select one" [disabled] [selected]
+                - option "Adult child"
+                - option "Spouse or partner"
+                - option "Attorney or deputy"
+                - option "Solicitor or adviser"
+                - option "Care professional"
+                - option "Myself"
+            - generic [ref=e76]:
+              - text: Enquiry type
+              - combobox "Enquiry type" [ref=e77]:
+                - option "Select one" [disabled] [selected]
+                - option "NHS CHC eligibility"
+                - option "CHC appeal or review"
+                - option "Self-funding care planning"
+                - option "Hospital discharge"
+                - option "Complex care planning"
+                - option "Not sure yet"
+            - generic [ref=e78]:
+              - text: Preferred contact method
+              - combobox "Preferred contact method" [ref=e79]:
+                - option "Phone" [selected]
+                - option "Email"
+                - option "Either"
+            - generic [ref=e80]:
+              - text: Urgency
+              - combobox "Urgency" [ref=e81]:
+                - option "Select one" [disabled] [selected]
+                - option "Urgent this week"
+                - option "Within 2 weeks"
+                - option "Planning ahead"
+          - generic [ref=e82]:
+            - text: Message
+            - textbox "Message" [ref=e83]
+          - generic [ref=e84]:
+            - checkbox "I consent to Care Navigator contacting me about this enquiry." [ref=e85]
+            - text: I consent to Care Navigator contacting me about this enquiry.
+          - button "Book a Free Initial Consultation" [ref=e86] [cursor=pointer]
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]: Questions
+        - heading "MDT Representation FAQs" [level=2] [ref=e90]
+      - generic [ref=e91]:
+        - article [ref=e92]:
+          - heading "What does MDT mean?" [level=3] [ref=e93]:
+            - button "What does MDT mean?" [expanded] [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: What does MDT mean?
+              - img [ref=e96]
+          - paragraph [ref=e99]: MDT means Multi-Disciplinary Team, usually involving professionals from different health and care disciplines.
+        - article [ref=e100]:
+          - heading "Can you attend remotely?" [level=3] [ref=e101]:
+            - button "Can you attend remotely?" [ref=e102] [cursor=pointer]:
+              - generic [ref=e103]: Can you attend remotely?
+              - img [ref=e104]
+  - contentinfo [ref=e106]:
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - text: Care Funding Guidance
+        - heading "Care Navigator" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Navigate funding. Protect care. Support decisions.
+        - paragraph [ref=e111]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - navigation "Footer navigation" [ref=e112]:
+        - link "Home" [ref=e113] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e114] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e115] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e116] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e117] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e118] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e119] [cursor=pointer]:
+          - /url: /contact
+        - link "Privacy" [ref=e120] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e121]:
+        - link "07711 494588" [ref=e122] [cursor=pointer]:
+          - /url: tel:+447711494588
+          - img [ref=e123]
+          - text: 07711 494588
+        - link "hello@carenavigator.org" [ref=e125] [cursor=pointer]:
+          - /url: mailto:hello@carenavigator.org
+          - img [ref=e126]
+          - text: hello@carenavigator.org
+    - generic [ref=e129]:
+      - generic [ref=e130]: © 2026 Care Navigator. All rights reserved.
+      - generic [ref=e131]: Calm · Clear · Evidence-led · Family-centred
+  - button "Open Next.js Dev Tools" [ref=e137] [cursor=pointer]:
+    - img [ref=e138]

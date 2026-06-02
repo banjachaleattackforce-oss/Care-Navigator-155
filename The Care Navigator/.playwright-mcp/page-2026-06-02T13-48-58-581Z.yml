@@ -1,0 +1,108 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Care Navigator home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - strong [ref=e6]: Care Navigator
+          - generic [ref=e7]: Care funding guidance
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e11] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e12] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e14] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "Book consultation" [ref=e17] [cursor=pointer]:
+        - /url: /contact#consultation
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: About the founder
+        - heading "Yvonne Brown helps families make care decisions with evidence and calm." [level=1] [ref=e23]
+        - paragraph [ref=e24]: Yvonne Brown brings more than two decades of health and social care experience to families who need clear thinking at difficult moments. Her work is practical, evidence-led and grounded in the reality of care decisions.
+        - link "Book a Free Initial Consultation" [ref=e25] [cursor=pointer]:
+          - /url: /contact#consultation
+      - img "Yvonne Brown, founder of Care Navigator" [ref=e27]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: Founder-led guidance
+        - heading "Practical, independent and family-centred." [level=2] [ref=e31]
+        - paragraph [ref=e32]: Care Navigator is built for the moments when families are handed complex terms, urgent choices and fragmented records. Yvonne’s role is to help make the decision route visible, so families and professionals can act with clearer evidence and less pressure.
+      - generic [ref=e33]:
+        - article [ref=e34]:
+          - img [ref=e35]
+          - heading "20+ years" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Health and social care experience
+        - article [ref=e40]:
+          - img [ref=e41]
+          - heading "Founder-led" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Direct guidance from Yvonne Brown
+        - article [ref=e48]:
+          - img [ref=e49]
+          - heading "Evidence-led" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Clear records, meetings and route plans
+        - article [ref=e55]:
+          - img [ref=e56]
+          - heading "Independent" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Guidance focused on the family’s interests
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]: Founder gallery
+        - heading "Professional warmth, grounded in real care experience." [level=2] [ref=e64]
+      - generic [ref=e65]:
+        - figure "Founder portrait" [ref=e66]:
+          - img "Yvonne Brown in a white and black polka dot dress" [ref=e68]
+          - generic [ref=e69]: Founder portrait
+        - figure "Care Navigator guidance" [ref=e70]:
+          - img "Yvonne Brown seated in a red dress" [ref=e72]
+          - generic [ref=e73]: Care Navigator guidance
+        - figure "Founder-led support" [ref=e74]:
+          - img "Yvonne Brown in a warm interior setting" [ref=e76]
+          - generic [ref=e77]: Founder-led support
+  - contentinfo [ref=e78]:
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - text: Care Funding Guidance
+        - heading "Care Navigator" [level=2] [ref=e81]
+        - paragraph [ref=e82]: Navigate funding. Protect care. Support decisions.
+        - paragraph [ref=e83]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - navigation "Footer navigation" [ref=e84]:
+        - link "Home" [ref=e85] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e86] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e87] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e88] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e89] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e90] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e91] [cursor=pointer]:
+          - /url: /contact
+        - link "Privacy" [ref=e92] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e93]:
+        - link "07711 494588" [ref=e94] [cursor=pointer]:
+          - /url: tel:+447711494588
+          - img [ref=e95]
+          - text: 07711 494588
+        - link "hello@carenavigator.org" [ref=e97] [cursor=pointer]:
+          - /url: mailto:hello@carenavigator.org
+          - img [ref=e98]
+          - text: hello@carenavigator.org
+    - generic [ref=e101]:
+      - generic [ref=e102]: © 2026 Care Navigator. All rights reserved.
+      - generic [ref=e103]: Calm · Clear · Evidence-led · Family-centred
+  - button "Open Next.js Dev Tools" [ref=e109] [cursor=pointer]:
+    - img [ref=e110]

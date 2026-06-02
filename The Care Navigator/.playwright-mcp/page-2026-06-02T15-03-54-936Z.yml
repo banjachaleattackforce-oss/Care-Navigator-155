@@ -1,0 +1,66 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Care Navigator home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - strong [ref=e6]: Care Navigator
+          - generic [ref=e7]: Care funding guidance
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e11] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e12] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Newsletter" [ref=e14] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "Book consultation" [ref=e17] [cursor=pointer]:
+        - /url: /contact#consultation
+  - main [ref=e18]:
+    - region "Care Navigator content manager" [ref=e19]:
+      - paragraph [ref=e20]: Loading Care Navigator content manager...
+  - contentinfo [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - text: Care Funding Guidance
+        - heading "Care Navigator" [level=2] [ref=e24]
+        - paragraph [ref=e25]: Navigate funding. Protect care. Support decisions.
+        - paragraph [ref=e26]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - navigation "Footer navigation" [ref=e27]:
+        - link "Home" [ref=e28] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e29] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e30] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e31] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e32] [cursor=pointer]:
+          - /url: /about
+        - link "Newsletter" [ref=e33] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e34] [cursor=pointer]:
+          - /url: /contact
+        - link "Privacy" [ref=e35] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e36]:
+        - link "07711 494588" [ref=e37] [cursor=pointer]:
+          - /url: tel:+447711494588
+          - img [ref=e38]
+          - text: 07711 494588
+        - link "hello@carenavigator.org" [ref=e40] [cursor=pointer]:
+          - /url: mailto:hello@carenavigator.org
+          - img [ref=e41]
+          - text: hello@carenavigator.org
+    - generic [ref=e44]:
+      - generic [ref=e45]: © 2026 Care Navigator. All rights reserved.
+      - generic [ref=e46]: Calm · Clear · Evidence-led · Family-centred
+  - button "Open Next.js Dev Tools" [ref=e52] [cursor=pointer]:
+    - img [ref=e53]

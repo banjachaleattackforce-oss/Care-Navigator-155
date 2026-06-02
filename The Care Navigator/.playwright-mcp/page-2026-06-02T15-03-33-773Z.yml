@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Care Navigator home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]:
+          - strong [ref=e6]: Care Navigator
+          - generic [ref=e7]: Care funding guidance
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e11] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e12] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Newsletter" [ref=e14] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+      - link "Book consultation" [ref=e17] [cursor=pointer]:
+        - /url: /contact#consultation
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Newsletter and updates
+        - heading "Care funding notes for families and professionals." [level=1] [ref=e23]
+        - paragraph [ref=e24]: Plain-English updates on NHS CHC, care funding, evidence preparation, appeals and planning.
+      - complementary [ref=e25]:
+        - heading "Browse by topic" [level=2] [ref=e26]
+        - generic [ref=e27]:
+          - link "Care funding" [ref=e28] [cursor=pointer]:
+            - /url: /news/tags/care-funding
+          - link "CHC appeals" [ref=e29] [cursor=pointer]:
+            - /url: /news/tags/chc-appeals
+          - link "Complex care" [ref=e30] [cursor=pointer]:
+            - /url: /news/tags/complex-care
+          - link "NHS CHC" [ref=e31] [cursor=pointer]:
+            - /url: /news/tags/nhs-chc
+          - link "Professional deputies" [ref=e32] [cursor=pointer]:
+            - /url: /news/tags/professional-deputies
+    - generic [ref=e33]:
+      - link "Self-funding Questions Self-Funding Families Should Ask Practical care-planning questions for families paying privately for care and trying to avoid rushed decisions." [ref=e34] [cursor=pointer]:
+        - /url: /news/self-funding-care-planning-questions
+        - generic [ref=e35]: Self-funding
+        - heading "Questions Self-Funding Families Should Ask" [level=2] [ref=e36]
+        - paragraph [ref=e37]: Practical care-planning questions for families paying privately for care and trying to avoid rushed decisions.
+      - link "NHS CHC Preparing for a CHC Assessment How families can prepare records, questions and examples before a full CHC assessment or review meeting." [ref=e38] [cursor=pointer]:
+        - /url: /news/preparing-for-a-chc-assessment
+        - generic [ref=e39]: NHS CHC
+        - heading "Preparing for a CHC Assessment" [level=2] [ref=e40]
+        - paragraph [ref=e41]: How families can prepare records, questions and examples before a full CHC assessment or review meeting.
+      - link "NHS CHC Understanding NHS Continuing Healthcare A plain-English starting point for families who have heard about NHS Continuing Healthcare and need to understand the route." [ref=e42] [cursor=pointer]:
+        - /url: /news/understanding-nhs-continuing-healthcare
+        - generic [ref=e43]: NHS CHC
+        - heading "Understanding NHS Continuing Healthcare" [level=2] [ref=e44]
+        - paragraph [ref=e45]: A plain-English starting point for families who have heard about NHS Continuing Healthcare and need to understand the route.
+    - generic [ref=e46]:
+      - generic [ref=e47]: Care funding updates
+      - heading "Join the newsletter." [level=2] [ref=e48]
+      - paragraph [ref=e49]: "Monthly care-funding notes for families and professionals: CHC process explainers, care-planning questions, appeal preparation and self-funding risk points."
+      - generic [ref=e50]:
+        - textbox "Name" [ref=e51]
+        - textbox "Email address" [ref=e52]
+        - generic [ref=e53]:
+          - checkbox "Send me care-funding updates." [ref=e54]
+          - text: Send me care-funding updates.
+        - button "Join newsletter" [ref=e55] [cursor=pointer]
+  - contentinfo [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - text: Care Funding Guidance
+        - heading "Care Navigator" [level=2] [ref=e59]
+        - paragraph [ref=e60]: Navigate funding. Protect care. Support decisions.
+        - paragraph [ref=e61]: Care Navigator provides independent care consultancy guidance. It does not provide regulated legal, financial or clinical advice.
+      - navigation "Footer navigation" [ref=e62]:
+        - link "Home" [ref=e63] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e64] [cursor=pointer]:
+          - /url: /services/nhs-chc-eligibility-review
+        - link "For Families" [ref=e65] [cursor=pointer]:
+          - /url: /for-families
+        - link "For Professionals" [ref=e66] [cursor=pointer]:
+          - /url: /for-professionals
+        - link "About" [ref=e67] [cursor=pointer]:
+          - /url: /about
+        - link "Newsletter" [ref=e68] [cursor=pointer]:
+          - /url: /news
+        - link "Contact" [ref=e69] [cursor=pointer]:
+          - /url: /contact
+        - link "Privacy" [ref=e70] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e71]:
+        - link "07711 494588" [ref=e72] [cursor=pointer]:
+          - /url: tel:+447711494588
+          - img [ref=e73]
+          - text: 07711 494588
+        - link "hello@carenavigator.org" [ref=e75] [cursor=pointer]:
+          - /url: mailto:hello@carenavigator.org
+          - img [ref=e76]
+          - text: hello@carenavigator.org
+    - generic [ref=e79]:
+      - generic [ref=e80]: © 2026 Care Navigator. All rights reserved.
+      - generic [ref=e81]: Calm · Clear · Evidence-led · Family-centred
+  - button "Open Next.js Dev Tools" [ref=e87] [cursor=pointer]:
+    - img [ref=e88]
+  - alert [ref=e91]

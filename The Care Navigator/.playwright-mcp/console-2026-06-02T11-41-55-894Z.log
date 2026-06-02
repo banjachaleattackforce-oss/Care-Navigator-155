@@ -1,0 +1,148 @@
+[     172ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     189ms] [LOG] [HMR] connected @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2089927ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2090037ms] [LOG] [Fast Refresh] done in 226ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2091053ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2091102ms] [LOG] [Fast Refresh] done in 164ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2109298ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2110127ms] [LOG] [Fast Refresh] done in 943ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2155551ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2155817ms] [LOG] [Fast Refresh] done in 367ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2163222ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2163426ms] [LOG] [Fast Refresh] done in 319ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2175083ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2175242ms] [LOG] [Fast Refresh] done in 270ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2277178ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2277228ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2323369ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2324316ms] [LOG] [Fast Refresh] done in 1049ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2326770ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2328540ms] [LOG] [Fast Refresh] done in 1879ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2383338ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 2383947ms] [LOG] [Fast Refresh] done in 718ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3219330ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 3219465ms] [LOG] [Fast Refresh] done in 249ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4933133ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4933743ms] [LOG] [Fast Refresh] done in 677ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4933867ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4934290ms] [LOG] [Fast Refresh] done in 546ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4934400ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4934579ms] [LOG] [Fast Refresh] done in 280ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4934745ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935257ms] [LOG] [Fast Refresh] done in 615ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935464ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935500ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935609ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935664ms] [LOG] [Fast Refresh] done in 162ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935781ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935842ms] [LOG] [Fast Refresh] done in 164ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935965ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4935987ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4936172ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4936279ms] [LOG] [Fast Refresh] done in 210ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4936494ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4936508ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4937074ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4937091ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4937209ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 4937272ms] [LOG] [Fast Refresh] done in 169ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5021779ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5022158ms] [LOG] [Fast Refresh] done in 464ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5022265ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5022311ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5022422ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5022711ms] [LOG] [Fast Refresh] done in 390ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5022932ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5023037ms] [LOG] [Fast Refresh] done in 211ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5023331ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5023357ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5023474ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5023595ms] [LOG] [Fast Refresh] done in 228ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5023732ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5024223ms] [LOG] [Fast Refresh] done in 600ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5024685ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5024748ms] [LOG] [Fast Refresh] done in 164ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5024860ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5024916ms] [LOG] [Fast Refresh] done in 160ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5025337ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5025513ms] [LOG] [Fast Refresh] done in 276ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5046343ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5046522ms] [LOG] [Fast Refresh] done in 278ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5046638ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5046777ms] [LOG] [Fast Refresh] done in 247ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5046898ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5046949ms] [LOG] [Fast Refresh] done in 161ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047058ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047175ms] [LOG] [Fast Refresh] done in 218ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047381ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047408ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047561ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047606ms] [LOG] [Fast Refresh] done in 150ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047748ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5047806ms] [LOG] [Fast Refresh] done in 167ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066274ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066308ms] [LOG] [Fast Refresh] done in 70ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066429ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066644ms] [LOG] [Fast Refresh] done in 324ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066776ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066791ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5066907ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067220ms] [LOG] [Fast Refresh] done in 415ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067373ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067399ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067557ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067693ms] [LOG] [Fast Refresh] done in 239ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067866ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5067866ms] [LOG] [Fast Refresh] done in 101ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5068116ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5068144ms] [LOG] [Fast Refresh] done in 131ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5102299ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5102522ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5102628ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5102692ms] [LOG] [Fast Refresh] done in 167ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5102937ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5103030ms] [LOG] [Fast Refresh] done in 198ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5103280ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5103310ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5103455ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5103479ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5135639ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5136805ms] [LOG] [Fast Refresh] done in 1113ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5136907ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5136987ms] [LOG] [Fast Refresh] done in 181ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5137130ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5137293ms] [LOG] [Fast Refresh] done in 271ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5138335ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5138421ms] [LOG] [HMR] connected @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5141593ms] [WARNING] The resource http://localhost:4010/images/the-care-navigator-mark.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5141593ms] [WARNING] The resource http://localhost:4010/_next/static/media/01e4147cff8141ee-s.p.3huc2loe0ie8a.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5141593ms] [WARNING] The resource http://localhost:4010/_next/static/media/89ea96820aa96980-s.p.0hs6q6udzld4a.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5141593ms] [WARNING] The resource http://localhost:4010/_next/static/media/ed5f1f9bced69653-s.p.2li_3lqay9qjq.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5151008ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5151145ms] [LOG] [Fast Refresh] done in 21ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5151363ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5151366ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5151561ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5151564ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5154597ms] [WARNING] The resource http://localhost:4010/images/the-care-navigator-mark.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5154597ms] [WARNING] The resource http://localhost:4010/_next/static/media/01e4147cff8141ee-s.p.3huc2loe0ie8a.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5154597ms] [WARNING] The resource http://localhost:4010/_next/static/media/89ea96820aa96980-s.p.0hs6q6udzld4a.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5154597ms] [WARNING] The resource http://localhost:4010/_next/static/media/ed5f1f9bced69653-s.p.2li_3lqay9qjq.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5206187ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5206232ms] [LOG] [Fast Refresh] done in 93ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5209206ms] [WARNING] The resource http://localhost:4010/images/the-care-navigator-mark.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5327675ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5327732ms] [LOG] [Fast Refresh] done in 88ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5327847ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328015ms] [LOG] [Fast Refresh] done in 279ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328129ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328222ms] [LOG] [Fast Refresh] done in 199ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328479ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328484ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328652ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5328741ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5331896ms] [WARNING] The resource http://localhost:4010/images/the-care-navigator-mark.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:4010/:0
+[ 5340341ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5340567ms] [LOG] [Fast Refresh] done in 331ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5363261ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5363389ms] [LOG] [Fast Refresh] done in 233ms @ http://localhost:4010/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
