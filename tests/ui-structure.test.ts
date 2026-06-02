@@ -55,4 +55,16 @@ describe("UI structure", () => {
     expect(css).toContain(".article-hero .page-hero-inner");
     expect(css).toContain(".about-hero-portrait img");
   });
+
+  it("uses the supplied Care Navigator logo image for public logo surfaces", () => {
+    const header = readProjectFile("src/components/Header.tsx");
+    const layout = readProjectFile("src/app/layout.tsx");
+    const seo = readProjectFile("src/lib/seo.ts");
+    const cmsConfig = readProjectFile("public/admin/config.yml");
+
+    expect(header).toContain("/images/care-navigator-logo.jpeg");
+    expect(layout).toContain("/images/care-navigator-logo.jpeg");
+    expect(seo).toContain("/images/care-navigator-logo.jpeg");
+    expect(cmsConfig).toContain("/images/care-navigator-logo.jpeg");
+  });
 });

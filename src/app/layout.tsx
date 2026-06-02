@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: brand.name,
     description: brand.tagline,
-    images: ["/images/yvonne-red-dress.jpg"]
+    images: ["/images/care-navigator-logo.jpeg"]
   },
   icons: {
-    icon: "/images/the-care-navigator-mark.svg",
-    shortcut: "/images/the-care-navigator-mark.svg",
-    apple: "/images/the-care-navigator-mark.svg"
+    icon: "/images/care-navigator-logo.jpeg",
+    shortcut: "/images/care-navigator-logo.jpeg",
+    apple: "/images/care-navigator-logo.jpeg"
   }
 };
 

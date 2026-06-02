@@ -10,7 +10,7 @@ public_folder: /uploads
 
 site_url: https://care-navigator-155.netlify.app
 display_url: https://care-navigator-155.netlify.app
-logo_url: /images/the-care-navigator-mark.svg
+logo_url: /images/care-navigator-logo.jpeg
 
 collections:
   - name: tags

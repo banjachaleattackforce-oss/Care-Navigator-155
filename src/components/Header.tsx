@@ -14,7 +14,7 @@ export function Header() {
     <header className="site-header">
       <div className="header-inner">
         <Link href="/" className="logo-link" aria-label="Care Navigator home" prefetch={false}>
-          <Image src="/images/the-care-navigator-mark.svg" alt="" width={58} height={58} priority />
+          <Image className="logo-mark" src="/images/care-navigator-logo.jpeg" alt="" width={64} height={64} priority />
           <span>
             <strong>Care Navigator</strong>
             <small>Care funding guidance</small>

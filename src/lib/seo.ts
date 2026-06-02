@@ -16,7 +16,7 @@ export function organizationJsonLd() {
       name: brand.founder
     },
     url: absoluteUrl("/"),
-    logo: absoluteUrl("/images/the-care-navigator-mark.svg"),
+    logo: absoluteUrl("/images/care-navigator-logo.jpeg"),
     telephone: brand.phone,
     email: brand.email,
     areaServed: brand.serviceAreas.map((area) => ({
