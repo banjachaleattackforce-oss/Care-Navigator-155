@@ -9,8 +9,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "netlify:login": "netlify login",
-    "deploy:preview": "npm run build && netlify deploy --dir=out",
-    "deploy:prod": "npm run build && netlify deploy --prod --dir=out"
+    "deploy:preview": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
