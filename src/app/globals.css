@@ -34,7 +34,7 @@ body {
     radial-gradient(circle at 90% 4%, rgba(212, 160, 23, 0.16), transparent 27rem),
     linear-gradient(180deg, var(--cn-warm-cream), #fffdf8 44%, var(--cn-parchment));
   color: var(--cn-ink);
-  font-family: var(--font-body), Arial, sans-serif;
+  font-family: var(--font-body), Inter, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.62;
 }
@@ -124,8 +124,9 @@ main {
 .logo-link strong {
   color: var(--cn-deep-teal);
   display: block;
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-display), var(--font-body), Arial, sans-serif;
   font-size: 1.55rem;
+  font-weight: 800;
   line-height: 1;
 }
 
@@ -255,24 +256,27 @@ h1,
 h2,
 h3 {
   color: var(--cn-deep-teal);
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-display), var(--font-body), Arial, sans-serif;
   letter-spacing: 0;
-  line-height: 1.04;
+  line-height: 1.08;
   margin: 0;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(2.9rem, 4.6vw, 4.7rem);
+  font-weight: 800;
   margin-top: 0.55rem;
 }
 
 h2 {
-  font-size: clamp(2.1rem, 3.3vw, 3.2rem);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 800;
 }
 
 h3 {
-  font-size: 1.42rem;
+  font-size: 1.35rem;
+  font-weight: 800;
 }
 
 p {
@@ -337,7 +341,7 @@ p {
   box-shadow: 0 18px 46px rgba(0, 0, 0, 0.2);
   color: var(--cn-deep-teal);
   display: flex;
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-display), var(--font-body), Arial, sans-serif;
   font-size: 4rem;
   font-weight: 700;
   height: 190px;
@@ -514,6 +518,104 @@ p {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(255, 253, 248, 0.92)),
     var(--cn-paper);
+}
+
+.family-misconceptions-section {
+  padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
+  padding-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+.family-misconceptions-panel {
+  background:
+    radial-gradient(circle at center, rgba(127, 183, 176, 0.2), transparent 24rem),
+    linear-gradient(135deg, var(--cn-deep-teal), var(--cn-trust-teal));
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow);
+  color: #fff;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.family-misconceptions-panel .section-heading {
+  margin-bottom: clamp(1.75rem, 4vw, 3rem);
+}
+
+.family-misconceptions-panel h2,
+.family-misconceptions-panel .eyebrow {
+  color: #fff;
+}
+
+.misconception-compare-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.misconception-compare-row {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 0.95fr) minmax(80px, 0.42fr) minmax(0, 0.95fr);
+}
+
+.misconception-belief,
+.misconception-reality {
+  align-items: flex-start;
+  background: rgba(255, 253, 248, 0.96);
+  border: 1px solid rgba(255, 253, 248, 0.35);
+  border-radius: 12px;
+  color: var(--cn-ink);
+  display: flex;
+  gap: 0.9rem;
+  min-height: 112px;
+  padding: 1rem;
+}
+
+.misconception-belief svg {
+  color: #c83f31;
+  flex: 0 0 auto;
+}
+
+.misconception-reality svg {
+  color: #25a865;
+  flex: 0 0 auto;
+}
+
+.misconception-belief h3,
+.misconception-reality h3 {
+  color: var(--cn-deep-teal);
+  font-family: var(--font-body), Inter, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.misconception-belief p,
+.misconception-reality p {
+  color: var(--cn-ink);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
+.misconception-belief p {
+  color: var(--cn-muted);
+  font-size: 0.82rem;
+}
+
+.misconception-rule {
+  background: linear-gradient(90deg, rgba(212, 160, 23, 0.05), var(--cn-gold));
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.misconception-rule::after {
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid var(--cn-gold);
+  border-top: 4px solid transparent;
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .resource-preview {
@@ -746,7 +848,7 @@ p {
 }
 
 .about-hero-portrait img {
-  object-position: 50% 18%;
+  object-position: 50% 4%;
 }
 
 .about-proof-section {
@@ -887,29 +989,53 @@ p {
 
 .professional-referral-section {
   display: grid;
-  gap: 2rem;
+  gap: 1.25rem;
+  justify-items: center;
   padding-top: clamp(0.5rem, 2vw, 1rem);
 }
 
 .professional-referral-grid {
-  align-items: stretch;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+  display: contents;
 }
 
-.professional-referral-grid .rich-panel,
-.professional-referral-grid .page-hero-card {
-  align-self: stretch;
+.professional-referral-card,
+.professional-fit-card {
+  width: min(100%, 980px);
 }
 
-.professional-referral-grid .rich-panel {
-  max-width: none;
+.professional-fit-card {
+  gap: 0.8rem;
 }
 
 .professional-form-panel {
   margin: 0 auto;
   width: min(100%, 980px);
+}
+
+.professional-next-step {
+  align-items: start;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 0.72fr) minmax(420px, 1fr);
+  text-align: left;
+}
+
+.professional-next-step .eyebrow,
+.professional-next-step h2,
+.professional-next-step p {
+  color: #fff;
+}
+
+.professional-next-step .hero-actions {
+  justify-content: flex-start;
+}
+
+.professional-next-step .contact-form {
+  text-align: left;
+}
+
+.service-inline-cta {
+  margin-top: 1.35rem;
 }
 
 .article-hero .page-hero-inner {
@@ -1354,6 +1480,7 @@ textarea {
   .consultation-section,
   .professional-referral-section,
   .professional-referral-grid,
+  .professional-next-step,
   .why-listen-panel,
   .contact-secondary-grid,
   .footer-inner {
@@ -1379,6 +1506,29 @@ textarea {
 
   .families-hero .page-hero-inner {
     grid-template-columns: 1fr;
+  }
+
+  .misconception-compare-row {
+    grid-template-columns: 1fr;
+  }
+
+  .misconception-rule {
+    height: 34px;
+    justify-self: start;
+    margin-left: 1.3rem;
+    width: 2px;
+  }
+
+  .misconception-rule::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid var(--cn-gold);
+    border-bottom: 0;
+    bottom: -1px;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
   }
 
   .trust-strip,

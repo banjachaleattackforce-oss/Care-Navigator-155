@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Atkinson_Hyperlegible, Cormorant_Garamond } from "next/font/google";
+import { Inter, Mulish } from "next/font/google";
 import "@/app/globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -9,17 +9,17 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { brand } from "@/content/site";
 import { organizationJsonLd } from "@/lib/seo";
 
-const display = Cormorant_Garamond({
+const display = Mulish({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800", "900"],
   display: "swap"
 });
 
-const body = Atkinson_Hyperlegible({
+const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap"
 });
 

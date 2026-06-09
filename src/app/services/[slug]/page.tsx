@@ -76,6 +76,9 @@ export default async function ServicePage({ params }: Props) {
             ))}
           </ul>
           <p className="small-note">{professionalDisclaimer}</p>
+          <div className="service-inline-cta">
+            <ButtonLink href={brand.bookingUrl}>{serviceCtaLabels[service.slug] || "Book a Free Initial Consultation"}</ButtonLink>
+          </div>
         </article>
         <aside className="side-panel">
           <span className="eyebrow">Start here</span>

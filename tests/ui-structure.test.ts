@@ -24,21 +24,15 @@ describe("UI structure", () => {
     expect(homePage).not.toMatch(/WhatsApp Image/i);
   });
 
-  it("uses unique founder gallery images on the about page", () => {
+  it("keeps about imagery focused on the hero and proof section without a founder gallery", () => {
     const aboutPage = readProjectFile("src/app/about/page.tsx");
     const imageSources = Array.from(aboutPage.matchAll(/src="([^"]*yvonne-[^"]+)"/g)).map((match) => match[1]);
-    const galleryBlock = aboutPage.slice(aboutPage.indexOf('className="founder-gallery"'));
-    const gallerySources = Array.from(galleryBlock.matchAll(/src="([^"]*yvonne-[^"]+)"/g)).map((match) => match[1]);
 
     expect(imageSources[0]).toBe("/images/yvonne-red-dress-alt.jpg");
     expect(aboutPage).toContain("Why listen to me?");
     expect(aboutPage).toContain("Over 1.2 million hours of care delivered since 2009");
-    expect(gallerySources).toEqual([
-      "/images/yvonne-polka-dot.jpg",
-      "/images/yvonne-red-dress.jpg",
-      "/images/yvonne-red-dress-alt.jpg"
-    ]);
-    expect(new Set(gallerySources).size).toBe(gallerySources.length);
+    expect(aboutPage).not.toContain("Founder gallery");
+    expect(aboutPage).not.toContain('className="founder-gallery"');
   });
 
   it("uses the final contact triangle and centred article hero layout hooks", () => {
@@ -76,12 +70,19 @@ describe("UI structure", () => {
     const css = readProjectFile("src/app/globals.css");
 
     expect(layout).toContain("ScrollReveal");
+    expect(layout).toContain("Mulish");
+    expect(layout).toContain("Inter");
     expect(homePage).toContain("family-contact-section");
     expect(homePage).toContain("founder-band-centered");
     expect(familiesPage).toContain("families-hero");
-    expect(professionalsPage).toContain("professional-referral-grid");
+    expect(familiesPage).toContain("family-misconceptions-section");
+    expect(familiesPage).toContain("misconception-compare-row");
+    expect(professionalsPage).toContain("professional-referral-card");
+    expect(professionalsPage).toContain("professional-fit-card");
+    expect(professionalsPage).toContain("professional-next-step");
     expect(professionalsPage).toContain("professional-form-panel");
     expect(css).toContain("radial-route-place");
     expect(css).toContain(".scroll-reveal-ready .reveal-on-scroll");
+    expect(css).toContain(".family-misconceptions-panel");
   });
 });

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CheckCircle2, XCircle } from "lucide-react";
 import { Accordion } from "@/components/Accordion";
 import { ButtonLink } from "@/components/ButtonLink";
-import { brand, familyRoutes, serviceCtaLabels, services } from "@/content/site";
+import { brand, commonMisconceptions, familyRoutes, serviceCtaLabels, services } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "For Families",
@@ -30,6 +31,35 @@ export default function ForFamiliesPage() {
             <h2>Common starting points</h2>
             <Accordion className="family-accordion" items={familyStartingPoints} />
           </aside>
+        </div>
+      </section>
+      <section className="section family-misconceptions-section">
+        <div className="family-misconceptions-panel">
+          <div className="section-heading centered">
+            <span className="eyebrow">Common misconceptions</span>
+            <h2>What families often believe vs. the reality.</h2>
+          </div>
+          <div className="misconception-compare-list">
+            {commonMisconceptions.map((item) => (
+              <article className="misconception-compare-row" key={item.title}>
+                <div className="misconception-belief">
+                  <XCircle size={28} aria-hidden />
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>Common belief</p>
+                  </div>
+                </div>
+                <div className="misconception-rule" aria-hidden />
+                <div className="misconception-reality">
+                  <CheckCircle2 size={28} aria-hidden />
+                  <div>
+                    <h3>The reality</h3>
+                    <p>{item.content}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
       <section className="section service-grid">

@@ -80,32 +80,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section className="section founder-gallery-section">
-        <div className="section-heading">
-          <span className="eyebrow">Founder gallery</span>
-          <h2>Professional warmth, grounded in real care experience.</h2>
-        </div>
-        <div className="founder-gallery">
-          <figure>
-            <div className="gallery-image">
-              <Image src="/images/yvonne-polka-dot.jpg" alt="Yvonne Brown in a white and black polka dot dress" fill sizes="(max-width: 900px) 100vw, 420px" />
-            </div>
-            <figcaption>Founder portrait</figcaption>
-          </figure>
-          <figure>
-            <div className="gallery-image">
-              <Image src="/images/yvonne-red-dress.jpg" alt="Yvonne Brown seated in a red dress" fill sizes="(max-width: 900px) 100vw, 420px" />
-            </div>
-            <figcaption>Care Navigator guidance</figcaption>
-          </figure>
-          <figure>
-            <div className="gallery-image">
-              <Image src="/images/yvonne-red-dress-alt.jpg" alt="Yvonne Brown in a warm interior setting" fill sizes="(max-width: 900px) 100vw, 420px" />
-            </div>
-            <figcaption>Founder-led support</figcaption>
-          </figure>
-        </div>
-      </section>
     </>
   );
 }
