@@ -8,8 +8,8 @@ publish_mode: editorial_workflow
 media_folder: public/uploads
 public_folder: /uploads
 
-site_url: https://care-navigator-120.netlify.app
-display_url: https://care-navigator-120.netlify.app
+site_url: https://carenavigate.org
+display_url: https://carenavigate.org
 logo_url: /images/care-navigator-logo.jpeg
 
 collections:

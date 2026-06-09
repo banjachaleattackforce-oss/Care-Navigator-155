@@ -2,7 +2,7 @@
 
 Admin link:
 
-`https://care-navigator-120.netlify.app/admin/`
+`https://carenavigate.org/admin/`
 
 ## Logging In
 

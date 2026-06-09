@@ -10,11 +10,11 @@ The result was a deployed, responsive, CMS-ready care consultancy website with N
 
 Live site:
 
-https://care-navigator-155.netlify.app
+https://carenavigate.org
 
 Admin route:
 
-https://care-navigator-155.netlify.app/admin/
+https://carenavigate.org/admin/
 
 GitHub repo supplied:
 

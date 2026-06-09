@@ -15,7 +15,7 @@ describe("Netlify form registration", () => {
   it("exposes article CTA block fields in the CMS config", () => {
     const cmsConfig = fs.readFileSync(path.join(process.cwd(), "public", "admin", "config.yml"), "utf8");
 
-    expect(cmsConfig).toContain("https://care-navigator-120.netlify.app");
+    expect(cmsConfig).toContain("https://carenavigate.org");
     expect(cmsConfig).toContain("ctaBlocks");
     expect(cmsConfig).toContain("consultation");
     expect(cmsConfig).toContain("professional-referral");

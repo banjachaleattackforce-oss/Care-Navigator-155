@@ -1,7 +1,7 @@
 import { brand } from "@/content/site";
 
 export function absoluteUrl(path = "") {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://the-care-navigator.netlify.app";
+  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://carenavigate.org";
   return `${base.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`;
 }
 

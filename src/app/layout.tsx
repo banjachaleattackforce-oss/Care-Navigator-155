@@ -24,7 +24,7 @@ const body = Atkinson_Hyperlegible({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://the-care-navigator.netlify.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://carenavigate.org"),
   title: {
     default: "Care Navigator | NHS CHC and Care Funding Guidance",
     template: "%s | Care Navigator"
