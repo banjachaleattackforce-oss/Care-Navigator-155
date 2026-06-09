@@ -72,6 +72,21 @@ main {
   overflow: hidden;
 }
 
+.scroll-reveal-ready .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(34px);
+  transition:
+    opacity 620ms ease,
+    transform 620ms cubic-bezier(0.2, 0.78, 0.22, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal-ready .reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .site-header {
   backdrop-filter: blur(18px);
   background: rgba(255, 253, 248, 0.9);
@@ -217,9 +232,9 @@ main {
   display: grid;
   gap: clamp(2.25rem, 5vw, 6rem);
   grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.86fr);
-  min-height: calc(100svh - var(--header-height));
-  padding-bottom: 4rem;
-  padding-top: clamp(3rem, 6vw, 6rem);
+  min-height: min(820px, calc(100svh - var(--header-height)));
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(2rem, 5vw, 4.5rem);
 }
 
 .hero-copy {
@@ -347,22 +362,42 @@ p {
   z-index: 3;
 }
 
+.hero-route-map .route-node,
+.hero-route-map .route-card {
+  animation: radial-route-place 860ms cubic-bezier(0.2, 0.78, 0.18, 1) both;
+  animation-delay: var(--route-delay, 120ms);
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
 .route-node-family {
+  --route-delay: 210ms;
+  --route-origin-x: 215%;
+  --route-origin-y: 118%;
   left: 9%;
   top: 24%;
 }
 
 .route-node-evidence {
+  --route-delay: 300ms;
+  --route-origin-x: -150%;
+  --route-origin-y: 96%;
   right: 9%;
   top: 28%;
 }
 
 .route-node-chc {
+  --route-delay: 390ms;
+  --route-origin-x: 178%;
+  --route-origin-y: -128%;
   bottom: 24%;
   left: 12%;
 }
 
 .route-node-care {
+  --route-delay: 480ms;
+  --route-origin-x: -168%;
+  --route-origin-y: -88%;
   bottom: 28%;
   right: 12%;
 }
@@ -385,13 +420,35 @@ p {
 }
 
 .route-card-top {
+  --route-delay: 570ms;
+  --route-origin-x: -190%;
+  --route-origin-y: 255%;
   right: 1rem;
   top: 1.2rem;
 }
 
 .route-card-bottom {
+  --route-delay: 660ms;
+  --route-origin-x: 110%;
+  --route-origin-y: -240%;
   bottom: 1.2rem;
   left: 1rem;
+}
+
+@keyframes radial-route-place {
+  from {
+    opacity: 0;
+    transform: translate(var(--route-origin-x), var(--route-origin-y)) scale(0.72);
+  }
+
+  72% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 .trust-strip {
@@ -482,6 +539,16 @@ p {
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+}
+
+.family-contact-section {
+  align-items: center;
+  padding-top: clamp(1rem, 3vw, 2rem);
+}
+
+.family-contact-section .check-panel {
+  align-self: center;
+  justify-self: stretch;
 }
 
 .check-panel,
@@ -576,6 +643,20 @@ p {
   max-width: 1540px;
 }
 
+.founder-band-centered {
+  min-height: 220px;
+  text-align: center;
+}
+
+.founder-band-centered > div {
+  margin: 0 auto;
+  max-width: 880px;
+}
+
+.founder-band-centered .button {
+  margin-top: 1.3rem;
+}
+
 .founder-band h2,
 .founder-band p {
   color: #fff;
@@ -616,10 +697,28 @@ p {
   padding: clamp(3rem, 6vw, 5.5rem) 0;
 }
 
+.families-hero {
+  padding: clamp(1.75rem, 4vw, 3.2rem) 0 clamp(2.5rem, 5vw, 4rem);
+}
+
 .page-hero-inner {
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+}
+
+.families-hero .page-hero-inner {
+  align-items: start;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.78fr);
+}
+
+.families-hero h1 {
+  max-width: 820px;
+}
+
+.families-hero p {
+  max-width: 780px;
 }
 
 .page-hero-card {
@@ -787,13 +886,30 @@ p {
 }
 
 .professional-referral-section {
-  align-items: center;
-  grid-template-columns: minmax(320px, 0.72fr) minmax(460px, 1fr);
-  padding-top: clamp(1rem, 3vw, 2rem);
+  display: grid;
+  gap: 2rem;
+  padding-top: clamp(0.5rem, 2vw, 1rem);
 }
 
-.professional-referral-section .rich-panel {
-  max-width: 720px;
+.professional-referral-grid {
+  align-items: stretch;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+}
+
+.professional-referral-grid .rich-panel,
+.professional-referral-grid .page-hero-card {
+  align-self: stretch;
+}
+
+.professional-referral-grid .rich-panel {
+  max-width: none;
+}
+
+.professional-form-panel {
+  margin: 0 auto;
+  width: min(100%, 980px);
 }
 
 .article-hero .page-hero-inner {
@@ -1176,8 +1292,14 @@ textarea {
   *,
   *::before,
   *::after {
+    animation: none !important;
     scroll-behavior: auto !important;
     transition: none !important;
+  }
+
+  .scroll-reveal-ready .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -1231,6 +1353,7 @@ textarea {
   .founder-band,
   .consultation-section,
   .professional-referral-section,
+  .professional-referral-grid,
   .why-listen-panel,
   .contact-secondary-grid,
   .footer-inner {
@@ -1252,6 +1375,10 @@ textarea {
 
   .professional-referral-section .rich-panel {
     max-width: none;
+  }
+
+  .families-hero .page-hero-inner {
+    grid-template-columns: 1fr;
   }
 
   .trust-strip,

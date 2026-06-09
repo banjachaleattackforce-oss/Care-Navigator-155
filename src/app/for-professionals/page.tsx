@@ -21,6 +21,18 @@ export default function ForProfessionalsPage() {
               deputyship or financial planning.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="section professional-referral-section">
+        <div className="professional-referral-grid">
+          <article className="rich-panel">
+            <span className="eyebrow">Professional referrals</span>
+            <h2>A clear route when care decisions sit beside professional advice.</h2>
+            <p>
+              Care Navigator can help clarify care context, evidence gaps, decision routes and family questions. This is
+              designed to support, not replace, regulated legal or financial advice.
+            </p>
+          </article>
           <aside className="page-hero-card">
             <h2>Referral fit</h2>
             {professionalRoutes.map((route) => (
@@ -28,17 +40,9 @@ export default function ForProfessionalsPage() {
             ))}
           </aside>
         </div>
-      </section>
-      <section className="section content-section professional-referral-section">
-        <article className="rich-panel">
-          <span className="eyebrow">Professional referrals</span>
-          <h2>A clear route when care decisions sit beside professional advice.</h2>
-          <p>
-            Care Navigator can help clarify care context, evidence gaps, decision routes and family questions. This is
-            designed to support, not replace, regulated legal or financial advice.
-          </p>
-        </article>
-        <ProfessionalReferralForm />
+        <div className="professional-form-panel">
+          <ProfessionalReferralForm />
+        </div>
       </section>
       <section className="section final-cta-band">
         <span className="eyebrow">Professional next step</span>

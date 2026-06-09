@@ -67,4 +67,21 @@ describe("UI structure", () => {
     expect(seo).toContain("/images/care-navigator-logo.jpeg");
     expect(cmsConfig).toContain("/images/care-navigator-logo.jpeg");
   });
+
+  it("wires scroll reveal and final page layout polish hooks", () => {
+    const layout = readProjectFile("src/app/layout.tsx");
+    const homePage = readProjectFile("src/app/page.tsx");
+    const familiesPage = readProjectFile("src/app/for-families/page.tsx");
+    const professionalsPage = readProjectFile("src/app/for-professionals/page.tsx");
+    const css = readProjectFile("src/app/globals.css");
+
+    expect(layout).toContain("ScrollReveal");
+    expect(homePage).toContain("family-contact-section");
+    expect(homePage).toContain("founder-band-centered");
+    expect(familiesPage).toContain("families-hero");
+    expect(professionalsPage).toContain("professional-referral-grid");
+    expect(professionalsPage).toContain("professional-form-panel");
+    expect(css).toContain("radial-route-place");
+    expect(css).toContain(".scroll-reveal-ready .reveal-on-scroll");
+  });
 });

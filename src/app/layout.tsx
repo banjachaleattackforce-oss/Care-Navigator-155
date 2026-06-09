@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { NetlifyIdentityWidget } from "@/components/NetlifyIdentityWidget";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { brand } from "@/content/site";
 import { organizationJsonLd } from "@/lib/seo";
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <NetlifyIdentityWidget />
+        <ScrollReveal />
       </body>
     </html>
   );

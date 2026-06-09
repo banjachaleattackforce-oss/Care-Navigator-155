@@ -2,7 +2,7 @@
 
 Admin link:
 
-`https://care-navigator-155.netlify.app/admin/`
+`https://care-navigator-120.netlify.app/admin/`
 
 ## Logging In
 
@@ -18,7 +18,7 @@ Important: the website developer does not create or store your password. Netlify
 
 The admin works properly only after Netlify is connected to the GitHub repository and Git Gateway is enabled.
 
-1. In Netlify, open the `care-navigator-155` project.
+1. In Netlify, open the `care-navigator-120` project.
 2. Link the project to GitHub repository `banjachaleattackforce-oss/Care-Navigator-155`.
 3. If the repository is not visible, click `Configure the Netlify app on GitHub` and grant Netlify access to `Care-Navigator-155`.
 4. Use:

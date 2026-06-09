@@ -18,7 +18,7 @@ export default function ForFamiliesPage() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero families-hero">
         <div className="page-hero-inner">
           <div>
             <span className="eyebrow">For families</span>

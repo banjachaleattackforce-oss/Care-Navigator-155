@@ -54,7 +54,7 @@ export default function HomePage() {
         })}
       </section>
 
-      <section className="section split-section">
+      <section className="section split-section family-contact-section">
         <div>
           <span className="eyebrow">When families contact us</span>
           <h2>A calm route through decisions that rarely feel simple.</h2>
@@ -86,7 +86,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section founder-band founder-band-simple">
+      <section className="section founder-band founder-band-simple founder-band-centered">
         <div>
           <span className="eyebrow">Meet Yvonne Brown</span>
           <h2>Experienced, independent and practical.</h2>
