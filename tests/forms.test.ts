@@ -5,11 +5,17 @@ import { describe, expect, it } from "vitest";
 describe("Netlify form registration", () => {
   it("declares all JavaScript-rendered form names in static HTML", () => {
     const formsHtml = fs.readFileSync(path.join(process.cwd(), "public", "__forms.html"), "utf8");
+    const homePage = fs.readFileSync(path.join(process.cwd(), "src", "app", "page.tsx"), "utf8");
+    const formDefinitions = fs.readFileSync(path.join(process.cwd(), "src", "components", "NetlifyFormDefinitions.tsx"), "utf8");
 
     expect(formsHtml).toContain('name="consultation-enquiry"');
     expect(formsHtml).toContain('name="professional-referral"');
     expect(formsHtml).toContain('name="newsletter-signup"');
     expect(formsHtml).toContain('name="consent"');
+    expect(homePage).toContain("<NetlifyFormDefinitions />");
+    expect(formDefinitions).toContain('name="consultation-enquiry"');
+    expect(formDefinitions).toContain('name="professional-referral"');
+    expect(formDefinitions).toContain('name="newsletter-signup"');
   });
 
   it("exposes article CTA block fields in the CMS config", () => {

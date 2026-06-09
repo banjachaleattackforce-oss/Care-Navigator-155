@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Accordion } from "@/components/Accordion";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ConsultationForm } from "@/components/ContactForms";
+import { NetlifyFormDefinitions } from "@/components/NetlifyFormDefinitions";
 import { ServiceCard } from "@/components/ServiceCard";
 import { brand, commonMisconceptions, familyRoutes, journeySteps, proofPoints, services } from "@/content/site";
 import { getAllNewsPosts } from "@/lib/news";
@@ -12,6 +13,7 @@ export default function HomePage() {
 
   return (
     <>
+      <NetlifyFormDefinitions />
       <section className="hero-section">
         <div className="hero-copy">
           <span className="eyebrow">Independent care funding guidance</span>
