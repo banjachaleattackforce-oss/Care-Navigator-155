@@ -520,12 +520,14 @@ p {
     var(--cn-paper);
 }
 
-.family-misconceptions-section {
+.family-misconceptions-section,
+.family-starting-points-section {
   padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
   padding-top: clamp(0.5rem, 2vw, 1rem);
 }
 
-.family-misconceptions-panel {
+.family-misconceptions-panel,
+.family-starting-points-panel {
   background:
     radial-gradient(circle at center, rgba(127, 183, 176, 0.2), transparent 24rem),
     linear-gradient(135deg, var(--cn-deep-teal), var(--cn-trust-teal));
@@ -535,13 +537,21 @@ p {
   padding: clamp(1.5rem, 4vw, 3rem);
 }
 
-.family-misconceptions-panel .section-heading {
+.family-misconceptions-panel .section-heading,
+.family-starting-points-panel .section-heading {
   margin-bottom: clamp(1.75rem, 4vw, 3rem);
 }
 
 .family-misconceptions-panel h2,
-.family-misconceptions-panel .eyebrow {
+.family-misconceptions-panel .eyebrow,
+.family-starting-points-panel h2,
+.family-starting-points-panel .eyebrow {
   color: #fff;
+}
+
+.family-starting-points-panel .family-accordion {
+  margin: 0 auto;
+  max-width: 1180px;
 }
 
 .misconception-compare-list {
@@ -616,6 +626,18 @@ p {
   right: -1px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.misconception-belief,
+.misconception-rule,
+.misconception-reality {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.misconception-compare-row:hover .misconception-belief,
+.misconception-compare-row:hover .misconception-reality {
+  box-shadow: 0 20px 46px rgba(2, 43, 36, 0.16);
+  transform: translateY(-2px);
 }
 
 .resource-preview {
@@ -815,11 +837,24 @@ p {
   grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.78fr);
 }
 
+.families-hero .family-hero-single {
+  display: block;
+  max-width: 1120px;
+  text-align: center;
+}
+
+.families-hero .family-hero-single > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .families-hero h1 {
-  max-width: 820px;
+  max-width: 1040px;
 }
 
 .families-hero p {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 780px;
 }
 
@@ -916,6 +951,40 @@ p {
 
 .contact-primary-card {
   width: min(100%, 980px);
+}
+
+.contact-primary-card {
+  width: min(100%, 1260px);
+}
+
+.contact-primary-grid {
+  align-items: start;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.76fr);
+}
+
+.contact-newsletter-panel {
+  align-self: start;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.contact-newsletter-panel .newsletter-form {
+  max-width: none;
+}
+
+.contact-referral-row {
+  width: min(100%, 1260px);
+}
+
+.contact-referral-panel {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact-referral-panel .contact-form {
+  margin-top: 0;
 }
 
 #consultation {
@@ -1482,6 +1551,7 @@ textarea {
   .professional-referral-grid,
   .professional-next-step,
   .why-listen-panel,
+  .contact-primary-grid,
   .contact-secondary-grid,
   .footer-inner {
     grid-template-columns: 1fr;

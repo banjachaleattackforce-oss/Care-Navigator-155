@@ -43,7 +43,9 @@ describe("UI structure", () => {
 
     expect(contactPage).toContain("contact-triangle");
     expect(contactPage).toContain("contact-primary-card");
-    expect(contactPage).toContain("contact-secondary-grid");
+    expect(contactPage).toContain("contact-primary-grid");
+    expect(contactPage).toContain("contact-newsletter-panel");
+    expect(contactPage).toContain("contact-referral-row");
     expect(articlePage).toContain("article-hero");
     expect(aboutPage).toContain("about-hero-portrait");
     expect(css).toContain(".article-hero .page-hero-inner");
@@ -67,6 +69,7 @@ describe("UI structure", () => {
     const homePage = readProjectFile("src/app/page.tsx");
     const familiesPage = readProjectFile("src/app/for-families/page.tsx");
     const professionalsPage = readProjectFile("src/app/for-professionals/page.tsx");
+    const misconceptionComparison = readProjectFile("src/components/MisconceptionComparison.tsx");
     const css = readProjectFile("src/app/globals.css");
 
     expect(layout).toContain("ScrollReveal");
@@ -76,7 +79,10 @@ describe("UI structure", () => {
     expect(homePage).toContain("founder-band-centered");
     expect(familiesPage).toContain("families-hero");
     expect(familiesPage).toContain("family-misconceptions-section");
-    expect(familiesPage).toContain("misconception-compare-row");
+    expect(familiesPage).toContain("family-starting-points-section");
+    expect(familiesPage).toContain("MisconceptionComparison");
+    expect(misconceptionComparison).toContain("misconception-compare-row");
+    expect(misconceptionComparison).toContain("misconception-rule");
     expect(professionalsPage).toContain("professional-referral-card");
     expect(professionalsPage).toContain("professional-fit-card");
     expect(professionalsPage).toContain("professional-next-step");

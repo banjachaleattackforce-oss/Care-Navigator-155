@@ -23,19 +23,21 @@ export default function ContactPage() {
             </div>
           </header>
           <div className="contact-primary-card">
-            <ConsultationForm />
+            <div className="contact-primary-grid">
+              <ConsultationForm />
+              <aside className="side-panel contact-newsletter-panel">
+                <span className="eyebrow">Newsletter</span>
+                <h2>Care-funding notes.</h2>
+                <NewsletterForm />
+              </aside>
+            </div>
           </div>
-          <div className="contact-secondary-grid">
-            <article className="rich-panel">
-              <span className="eyebrow">Professional referral</span>
+          <div className="contact-referral-row">
+            <article className="rich-panel contact-referral-panel">
+              <span className="eyebrow">Client referral / professional request</span>
               <h2>Refer a client or request professional input.</h2>
               <ProfessionalReferralForm />
             </article>
-            <aside className="side-panel">
-              <span className="eyebrow">Newsletter</span>
-              <h2>Care-funding notes.</h2>
-              <NewsletterForm />
-            </aside>
           </div>
         </div>
       </section>
