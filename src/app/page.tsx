@@ -4,8 +4,7 @@ import { Accordion } from "@/components/Accordion";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ConsultationForm } from "@/components/ContactForms";
 import { NetlifyFormDefinitions } from "@/components/NetlifyFormDefinitions";
-import { ServiceCard } from "@/components/ServiceCard";
-import { brand, commonMisconceptions, familyRoutes, journeySteps, proofPoints, services } from "@/content/site";
+import { brand, commonMisconceptions, familyRoutes, journeySteps, proofPoints, visibleServiceHighlights } from "@/content/site";
 import { getAllNewsPosts } from "@/lib/news";
 
 export default function HomePage() {
@@ -17,10 +16,14 @@ export default function HomePage() {
       <section className="hero-section">
         <div className="hero-copy">
           <span className="eyebrow">Independent care funding guidance</span>
-          <h1>Helping families navigate NHS CHC, care funding and complex care decisions.</h1>
+          <h1>Helping families navigate self-funded care, Local Authority funding and NHS Continuing Healthcare (CHC), enabling informed decisions about complex care with clarity and confidence.</h1>
           <p>
-            Founder-led, evidence-informed guidance for families and professionals who need clarity before an assessment,
-            review, discharge, appeal or self-funding decision.
+            Many families find themselves making significant care decisions without a clear understanding of the support
+            and funding options available.
+          </p>
+          <p>
+            Care Navigator provides independent guidance to help families understand complex care needs, explore funding
+            pathways and make informed decisions that are right for their circumstances.
           </p>
           <div className="hero-actions">
             <ButtonLink href={brand.bookingUrl}>Book a Free Initial Consultation</ButtonLink>
@@ -81,9 +84,13 @@ export default function HomePage() {
           <h2>Care consultancy without care-agency confusion.</h2>
           <p>Each conversation starts with the situation, urgency and support needed.</p>
         </div>
-        <div className="service-grid">
-          {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
+        <div className="service-grid service-highlight-grid">
+          {visibleServiceHighlights.map((service) => (
+            <article className="compact-card service-highlight-card" key={service.title}>
+              <CheckCircle2 size={22} aria-hidden />
+              <h3>{service.title}</h3>
+              <p>{service.text}</p>
+            </article>
           ))}
         </div>
       </section>

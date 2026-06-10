@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function ForProfessionalsPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="page-hero-inner">
+      <section className="page-hero professionals-hero">
+        <div className="page-hero-inner centered-page-hero professionals-hero-inner">
           <div>
             <span className="eyebrow">For professionals</span>
             <h1>Independent care context for client decisions.</h1>

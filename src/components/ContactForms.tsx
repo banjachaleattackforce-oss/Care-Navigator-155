@@ -111,7 +111,13 @@ function useNetlifySubmit() {
   return { status, submit };
 }
 
-export function ConsultationForm({ compact = false }: { compact?: boolean }) {
+export function ConsultationForm({
+  compact = false,
+  showNewsletterOptIn = false
+}: {
+  compact?: boolean;
+  showNewsletterOptIn?: boolean;
+}) {
   const { status, submit } = useNetlifySubmit();
 
   return (
@@ -200,6 +206,12 @@ export function ConsultationForm({ compact = false }: { compact?: boolean }) {
         <input name="consent" type="checkbox" required />
         I consent to Care Navigator contacting me about this enquiry.
       </label>
+      {showNewsletterOptIn ? (
+        <label className="checkbox-line">
+          <input name="newsletter_opt_in" type="checkbox" />
+          Send me care-funding notes and updates.
+        </label>
+      ) : null}
       <button className="button button-primary" type="submit" disabled={status === "sending"}>
         {status === "sending" ? "Sending..." : "Book a Free Initial Consultation"}
       </button>

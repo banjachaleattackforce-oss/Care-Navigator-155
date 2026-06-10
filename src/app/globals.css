@@ -283,6 +283,21 @@ p {
   margin: 0;
 }
 
+h1 + p,
+h2 + p,
+h3 + p,
+.eyebrow + h1,
+.eyebrow + h2,
+.hero-copy p + p {
+  margin-top: 1rem;
+}
+
+.section-heading h2 + p,
+.page-hero h1 + p,
+.contact-intro h1 + p {
+  margin-top: 1.15rem;
+}
+
 .hero-copy p,
 .page-hero p,
 .section-heading p,
@@ -529,11 +544,11 @@ p {
 .family-misconceptions-panel,
 .family-starting-points-panel {
   background:
-    radial-gradient(circle at center, rgba(127, 183, 176, 0.2), transparent 24rem),
-    linear-gradient(135deg, var(--cn-deep-teal), var(--cn-trust-teal));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 253, 248, 0.94)),
+    var(--cn-paper);
+  border: 1px solid var(--cn-border);
   border-radius: var(--radius-panel);
   box-shadow: var(--shadow);
-  color: #fff;
   padding: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -542,11 +557,8 @@ p {
   margin-bottom: clamp(1.75rem, 4vw, 3rem);
 }
 
-.family-misconceptions-panel h2,
-.family-misconceptions-panel .eyebrow,
-.family-starting-points-panel h2,
-.family-starting-points-panel .eyebrow {
-  color: #fff;
+.family-misconceptions-panel h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
 }
 
 .family-starting-points-panel .family-accordion {
@@ -559,6 +571,23 @@ p {
   gap: 0.9rem;
 }
 
+.misconception-column-labels {
+  align-items: center;
+  color: var(--cn-trust-teal);
+  display: grid;
+  font-size: 0.82rem;
+  font-weight: 900;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 0.95fr) minmax(80px, 0.42fr) minmax(0, 0.95fr);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.misconception-column-labels span:last-child {
+  grid-column: 3;
+}
+
 .misconception-compare-row {
   align-items: center;
   display: grid;
@@ -569,8 +598,8 @@ p {
 .misconception-belief,
 .misconception-reality {
   align-items: flex-start;
-  background: rgba(255, 253, 248, 0.96);
-  border: 1px solid rgba(255, 253, 248, 0.35);
+  background: var(--cn-paper);
+  border: 1px solid var(--cn-border);
   border-radius: 12px;
   color: var(--cn-ink);
   display: flex;
@@ -611,7 +640,7 @@ p {
 }
 
 .misconception-rule {
-  background: linear-gradient(90deg, rgba(212, 160, 23, 0.05), var(--cn-gold));
+  background: linear-gradient(90deg, rgba(212, 160, 23, 0.12), var(--cn-gold));
   height: 2px;
   position: relative;
   width: 100%;
@@ -925,7 +954,7 @@ p {
 }
 
 .contact-hero .contact-list {
-  justify-items: center;
+  justify-items: start;
 }
 
 .contact-triangle {
@@ -936,21 +965,33 @@ p {
   padding-top: clamp(2rem, 5vw, 4.5rem);
 }
 
+.contact-hero-panel {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.58fr);
+  width: min(100%, 1260px);
+}
+
 .contact-intro {
-  max-width: 980px;
-  text-align: center;
+  max-width: 760px;
 }
 
 .contact-intro p {
   color: var(--cn-muted);
   font-size: 1.15rem;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 760px;
 }
 
-.contact-primary-card {
-  width: min(100%, 980px);
+.contact-hero-portrait {
+  justify-self: end;
+  min-height: min(520px, 56svh);
+  width: min(100%, 430px);
+}
+
+.contact-hero-portrait img {
+  object-fit: cover;
+  object-position: 50% 4%;
 }
 
 .contact-primary-card {
@@ -992,6 +1033,9 @@ p {
 }
 
 .contact-primary-card .contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
   padding: clamp(1.5rem, 3vw, 2.4rem);
 }
 
@@ -1061,6 +1105,35 @@ p {
   gap: 1.25rem;
   justify-items: center;
   padding-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+.professionals-hero-inner {
+  display: block;
+  max-width: 1120px;
+  text-align: center;
+}
+
+.professionals-hero-inner > div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+}
+
+.professionals-hero-inner p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-highlight-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.service-highlight-card {
+  align-content: start;
+}
+
+.service-highlight-card svg {
+  color: var(--cn-trust-teal);
 }
 
 .professional-referral-grid {
@@ -1551,6 +1624,7 @@ textarea {
   .professional-referral-grid,
   .professional-next-step,
   .why-listen-panel,
+  .contact-hero-panel,
   .contact-primary-grid,
   .contact-secondary-grid,
   .footer-inner {
@@ -1568,6 +1642,15 @@ textarea {
 
   .contact-intro {
     justify-self: center;
+    text-align: center;
+  }
+
+  .contact-hero .contact-list {
+    justify-items: center;
+  }
+
+  .contact-hero-portrait {
+    justify-self: center;
   }
 
   .professional-referral-section .rich-panel {
@@ -1580,6 +1663,10 @@ textarea {
 
   .misconception-compare-row {
     grid-template-columns: 1fr;
+  }
+
+  .misconception-column-labels {
+    display: none;
   }
 
   .misconception-rule {

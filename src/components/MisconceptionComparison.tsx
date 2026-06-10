@@ -8,13 +8,16 @@ type MisconceptionItem = {
 export function MisconceptionComparison({ items }: { items: MisconceptionItem[] }) {
   return (
     <div className="misconception-compare-list">
+      <div className="misconception-column-labels" aria-hidden>
+        <span>Common belief</span>
+        <span>The reality</span>
+      </div>
       {items.map((item) => (
         <article className="misconception-compare-row" key={item.title}>
           <div className="misconception-belief">
             <XCircle size={28} aria-hidden />
             <div>
               <h3>{item.title}</h3>
-              <p>Common belief</p>
             </div>
           </div>
           <div className="misconception-rule" aria-hidden />

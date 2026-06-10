@@ -266,6 +266,29 @@ export const services: Service[] = [
   }
 ];
 
+export const visibleServiceHighlights = [
+  {
+    title: "NHS Continuing Healthcare (CHC) Guidance",
+    text: "Understand whether CHC may be relevant, what evidence matters and what the next process step should be."
+  },
+  {
+    title: "Complex Care Needs Assessment",
+    text: "Clarify care needs, risks, routines and decision points where the situation has become hard to hold together."
+  },
+  {
+    title: "Funding Strategy & Navigation",
+    text: "Compare NHS, local authority and self-funding pathways so families can make decisions with more confidence."
+  },
+  {
+    title: "Risk & Complexity Reviews",
+    text: "Review changing needs, safety concerns, evidence gaps and practical risks before decisions escalate."
+  },
+  {
+    title: "Family Advisory Support",
+    text: "Founder-led guidance for relatives, attorneys and families who need calm next steps at difficult moments."
+  }
+];
+
 export const familyRoutes = [
   "A parent has been discharged or may be discharged soon",
   "The family is unsure whether CHC funding has been considered properly",

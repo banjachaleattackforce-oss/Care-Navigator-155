@@ -15,6 +15,7 @@ export function NetlifyFormDefinitions() {
         <input name="urgency" />
         <textarea name="message" />
         <input name="consent" />
+        <input name="newsletter_opt_in" />
       </form>
       <form name="professional-referral" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="professional-referral" />

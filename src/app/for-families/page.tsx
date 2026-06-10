@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Accordion } from "@/components/Accordion";
 import { ButtonLink } from "@/components/ButtonLink";
+import { ConsultationForm } from "@/components/ContactForms";
 import { MisconceptionComparison } from "@/components/MisconceptionComparison";
-import { brand, commonMisconceptions, familyRoutes, serviceCtaLabels, services } from "@/content/site";
+import { brand, commonMisconceptions, familyRoutes, visibleServiceHighlights } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "For Families",
@@ -48,21 +48,20 @@ export default function ForFamiliesPage() {
         </div>
       </section>
       <section className="section service-grid">
-        {services.slice(0, 9).map((service) => (
-          <article className="compact-card" key={service.slug}>
+        {visibleServiceHighlights.map((service) => (
+          <article className="compact-card service-highlight-card" key={service.title}>
             <h2>{service.title}</h2>
-            <p>{service.summary}</p>
-            <Link className="text-link" href={`/services/${service.slug}`} prefetch={false}>
-              {serviceCtaLabels[service.slug]}
-            </Link>
+            <p>{service.text}</p>
           </article>
         ))}
       </section>
-      <section className="section final-cta-band">
-        <span className="eyebrow">Next step</span>
-        <h2>Bring the care-funding picture into focus.</h2>
-        <p>Start with one calm conversation, then decide whether an evidence review, CHC route plan or complex care planning support is the right next step.</p>
-        <ButtonLink href={brand.bookingUrl}>Book a Free Initial Consultation</ButtonLink>
+      <section className="section consultation-section family-consultation-section">
+        <div>
+          <span className="eyebrow">Next step</span>
+          <h2>Start with a calm consultation.</h2>
+          <p>Share what is happening now, then decide whether CHC guidance, funding navigation, risk review or family advisory support is the right next step.</p>
+        </div>
+        <ConsultationForm compact showNewsletterOptIn />
       </section>
     </>
   );

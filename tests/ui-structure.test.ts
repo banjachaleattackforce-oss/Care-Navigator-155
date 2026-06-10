@@ -42,10 +42,12 @@ describe("UI structure", () => {
     const css = readProjectFile("src/app/globals.css");
 
     expect(contactPage).toContain("contact-triangle");
+    expect(contactPage).toContain("contact-hero-panel");
+    expect(contactPage).toContain("contact-hero-portrait");
     expect(contactPage).toContain("contact-primary-card");
-    expect(contactPage).toContain("contact-primary-grid");
-    expect(contactPage).toContain("contact-newsletter-panel");
+    expect(contactPage).toContain("showNewsletterOptIn");
     expect(contactPage).toContain("contact-referral-row");
+    expect(contactPage).not.toContain("contact-newsletter-panel");
     expect(articlePage).toContain("article-hero");
     expect(aboutPage).toContain("about-hero-portrait");
     expect(css).toContain(".article-hero .page-hero-inner");
@@ -69,7 +71,10 @@ describe("UI structure", () => {
     const homePage = readProjectFile("src/app/page.tsx");
     const familiesPage = readProjectFile("src/app/for-families/page.tsx");
     const professionalsPage = readProjectFile("src/app/for-professionals/page.tsx");
+    const contactForms = readProjectFile("src/components/ContactForms.tsx");
+    const netlifyDefinitions = readProjectFile("src/components/NetlifyFormDefinitions.tsx");
     const misconceptionComparison = readProjectFile("src/components/MisconceptionComparison.tsx");
+    const siteContent = readProjectFile("src/content/site.ts");
     const css = readProjectFile("src/app/globals.css");
 
     expect(layout).toContain("ScrollReveal");
@@ -77,18 +82,28 @@ describe("UI structure", () => {
     expect(layout).toContain("Inter");
     expect(homePage).toContain("family-contact-section");
     expect(homePage).toContain("founder-band-centered");
+    expect(homePage).toContain("Helping families navigate self-funded care, Local Authority funding and NHS Continuing Healthcare (CHC)");
+    expect(homePage).toContain("visibleServiceHighlights");
     expect(familiesPage).toContain("families-hero");
     expect(familiesPage).toContain("family-misconceptions-section");
     expect(familiesPage).toContain("family-starting-points-section");
     expect(familiesPage).toContain("MisconceptionComparison");
+    expect(familiesPage).toContain("ConsultationForm compact showNewsletterOptIn");
     expect(misconceptionComparison).toContain("misconception-compare-row");
+    expect(misconceptionComparison).toContain("misconception-column-labels");
     expect(misconceptionComparison).toContain("misconception-rule");
     expect(professionalsPage).toContain("professional-referral-card");
     expect(professionalsPage).toContain("professional-fit-card");
     expect(professionalsPage).toContain("professional-next-step");
     expect(professionalsPage).toContain("professional-form-panel");
+    expect(contactForms).toContain("newsletter_opt_in");
+    expect(netlifyDefinitions).toContain("newsletter_opt_in");
+    expect(siteContent).toContain("NHS Continuing Healthcare (CHC) Guidance");
+    expect(siteContent).toContain("Family Advisory Support");
     expect(css).toContain("radial-route-place");
     expect(css).toContain(".scroll-reveal-ready .reveal-on-scroll");
     expect(css).toContain(".family-misconceptions-panel");
+    expect(css).toContain(".misconception-column-labels");
+    expect(css).toContain(".contact-hero-panel");
   });
 });
