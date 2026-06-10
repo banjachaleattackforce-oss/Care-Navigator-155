@@ -83,6 +83,7 @@ export default async function ServicePage({ params }: Props) {
         <aside className="side-panel">
           <span className="eyebrow">Start here</span>
           <h2>{serviceCtaLabels[service.slug] || "Book the first conversation."}</h2>
+          <p>Tell us what is happening now, and we will help you understand which care-funding or planning step should come next.</p>
           <ConsultationForm compact />
         </aside>
       </section>

@@ -12,10 +12,12 @@ describe("Netlify form registration", () => {
     expect(formsHtml).toContain('name="professional-referral"');
     expect(formsHtml).toContain('name="newsletter-signup"');
     expect(formsHtml).toContain('name="consent"');
+    expect(formsHtml).toContain('name="newsletter_opt_in"');
     expect(homePage).toContain("<NetlifyFormDefinitions />");
     expect(formDefinitions).toContain('name="consultation-enquiry"');
     expect(formDefinitions).toContain('name="professional-referral"');
     expect(formDefinitions).toContain('name="newsletter-signup"');
+    expect(formDefinitions).toContain('name="newsletter_opt_in"');
   });
 
   it("exposes article CTA block fields in the CMS config", () => {

@@ -4,14 +4,15 @@ import { Accordion } from "@/components/Accordion";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ConsultationForm } from "@/components/ContactForms";
 import { NetlifyFormDefinitions } from "@/components/NetlifyFormDefinitions";
-import { brand, commonMisconceptions, familyRoutes, journeySteps, proofPoints, visibleServiceHighlights } from "@/content/site";
+import { ServiceCard } from "@/components/ServiceCard";
+import { brand, commonMisconceptions, familyRoutes, journeySteps, proofPoints, services } from "@/content/site";
 import { getAllNewsPosts } from "@/lib/news";
 
 export default function HomePage() {
   const posts = getAllNewsPosts().slice(0, 3);
 
   return (
-    <>
+    <div className="home-page">
       <NetlifyFormDefinitions />
       <section className="hero-section">
         <div className="hero-copy">
@@ -84,13 +85,9 @@ export default function HomePage() {
           <h2>Care consultancy without care-agency confusion.</h2>
           <p>Each conversation starts with the situation, urgency and support needed.</p>
         </div>
-        <div className="service-grid service-highlight-grid">
-          {visibleServiceHighlights.map((service) => (
-            <article className="compact-card service-highlight-card" key={service.title}>
-              <CheckCircle2 size={22} aria-hidden />
-              <h3>{service.title}</h3>
-              <p>{service.text}</p>
-            </article>
+        <div className="service-grid home-service-grid">
+          {services.map((service) => (
+            <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
       </section>
@@ -157,6 +154,6 @@ export default function HomePage() {
         </div>
         <ConsultationForm compact />
       </section>
-    </>
+    </div>
   );
 }

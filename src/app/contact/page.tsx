@@ -34,13 +34,17 @@ export default function ContactPage() {
               />
             </figure>
           </div>
-          <div className="contact-primary-card">
-            <ConsultationForm showNewsletterOptIn />
-          </div>
-          <div className="contact-referral-row">
-            <article className="rich-panel contact-referral-panel">
+          <div className="contact-form-pair">
+            <article className="rich-panel contact-form-card contact-consultation-card">
+              <span className="eyebrow">Care Navigator contact form</span>
+              <h2>Book a free initial consultation.</h2>
+              <p>Use this form for family care-funding questions, CHC guidance, complex care needs or general next-step support.</p>
+              <ConsultationForm showNewsletterOptIn />
+            </article>
+            <article className="rich-panel contact-form-card contact-referral-panel">
               <span className="eyebrow">Client referral / professional request</span>
               <h2>Refer a client or request professional input.</h2>
+              <p>Use this form for professional referrals, client context requests and care-planning background for advisory work.</p>
               <ProfessionalReferralForm />
             </article>
           </div>

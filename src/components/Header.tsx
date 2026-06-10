@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { brand, navItems } from "@/content/site";
+import { brand, navItems, services } from "@/content/site";
 import { ButtonLink } from "@/components/ButtonLink";
 
 export function Header() {
@@ -21,11 +21,26 @@ export function Header() {
           </span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} prefetch={false}>
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.label === "Services" ? (
+              <div className="nav-dropdown" key={item.href}>
+                <Link href={item.href} prefetch={false}>
+                  {item.label}
+                </Link>
+                <div className="nav-dropdown-menu" aria-label="Services menu">
+                  {services.map((service) => (
+                    <Link key={service.slug} href={`/services/${service.slug}`} prefetch={false}>
+                      {service.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link key={item.href} href={item.href} prefetch={false}>
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
         <div className="header-actions">
           <ButtonLink href={brand.bookingUrl} className="hide-small">
@@ -40,11 +55,26 @@ export function Header() {
         <button type="button" className="mobile-close" aria-label="Close navigation" onClick={() => setOpen(false)}>
           <X size={22} />
         </button>
-        {navItems.map((item) => (
-          <Link key={item.href} href={item.href} onClick={() => setOpen(false)} prefetch={false}>
-            {item.label}
-          </Link>
-        ))}
+        {navItems.map((item) =>
+          item.label === "Services" ? (
+            <div className="mobile-services-group" key={item.href}>
+              <Link href={item.href} onClick={() => setOpen(false)} prefetch={false}>
+                {item.label}
+              </Link>
+              <div>
+                {services.map((service) => (
+                  <Link key={service.slug} href={`/services/${service.slug}`} onClick={() => setOpen(false)} prefetch={false}>
+                    {service.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <Link key={item.href} href={item.href} onClick={() => setOpen(false)} prefetch={false}>
+              {item.label}
+            </Link>
+          )
+        )}
         <ButtonLink href={brand.bookingUrl}>Book a Free Initial Consultation</ButtonLink>
       </div>
     </header>

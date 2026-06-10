@@ -3,7 +3,7 @@ import { Accordion } from "@/components/Accordion";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ConsultationForm } from "@/components/ContactForms";
 import { MisconceptionComparison } from "@/components/MisconceptionComparison";
-import { brand, commonMisconceptions, familyRoutes, visibleServiceHighlights } from "@/content/site";
+import { serviceCtaLabels, services, brand, commonMisconceptions, familyRoutes } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "For Families",
@@ -29,6 +29,14 @@ export default function ForFamiliesPage() {
           </div>
         </div>
       </section>
+      <section className="section consultation-section family-consultation-section stacked-form-section">
+        <div>
+          <span className="eyebrow">Next step</span>
+          <h2>Start with a calm consultation.</h2>
+          <p>Share what is happening now, then decide whether CHC guidance, funding navigation, risk review or family advisory support is the right next step.</p>
+        </div>
+        <ConsultationForm compact showNewsletterOptIn />
+      </section>
       <section className="section family-misconceptions-section">
         <div className="family-misconceptions-panel">
           <div className="section-heading centered">
@@ -47,21 +55,16 @@ export default function ForFamiliesPage() {
           <Accordion className="family-accordion" items={familyStartingPoints} />
         </div>
       </section>
-      <section className="section service-grid">
-        {visibleServiceHighlights.map((service) => (
-          <article className="compact-card service-highlight-card" key={service.title}>
+      <section className="section service-grid family-service-grid">
+        {services.map((service) => (
+          <article className="compact-card service-highlight-card" key={service.slug}>
             <h2>{service.title}</h2>
-            <p>{service.text}</p>
+            <p>{service.summary}</p>
+            <ButtonLink href={`/services/${service.slug}`} variant="secondary">
+              {serviceCtaLabels[service.slug] || "Learn more"}
+            </ButtonLink>
           </article>
         ))}
-      </section>
-      <section className="section consultation-section family-consultation-section">
-        <div>
-          <span className="eyebrow">Next step</span>
-          <h2>Start with a calm consultation.</h2>
-          <p>Share what is happening now, then decide whether CHC guidance, funding navigation, risk review or family advisory support is the right next step.</p>
-        </div>
-        <ConsultationForm compact showNewsletterOptIn />
       </section>
     </>
   );

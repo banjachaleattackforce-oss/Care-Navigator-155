@@ -39,6 +39,10 @@ body {
   line-height: 1.62;
 }
 
+body {
+  zoom: 0.9;
+}
+
 body::before {
   content: "";
   inset: 0;
@@ -153,6 +157,56 @@ main {
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown > a {
+  align-items: center;
+  display: inline-flex;
+  min-height: 42px;
+}
+
+.nav-dropdown-menu {
+  background: rgba(255, 253, 248, 0.98);
+  border: 1px solid var(--cn-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0.25rem;
+  left: 50%;
+  min-width: 310px;
+  opacity: 0;
+  padding: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  transform: translate(-50%, 8px);
+  transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 60;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.nav-dropdown-menu a {
+  border-radius: 10px;
+  font-size: 0.84rem;
+  letter-spacing: 0;
+  min-height: 0;
+  padding: 0.65rem 0.75rem;
+  text-transform: none;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible {
+  background: var(--cn-parchment);
 }
 
 .header-actions {
@@ -307,6 +361,22 @@ h3 + p,
   max-width: 720px;
 }
 
+.home-page h2,
+.home-page h3 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.home-page .hero-copy h1 {
+  font-size: clamp(2.9rem, 4.6vw, 4.7rem);
+  line-height: 1.08;
+}
+
+.home-page .section-heading h2 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .hero-actions,
 .centered-action {
   align-items: center;
@@ -314,6 +384,11 @@ h3 + p,
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 1.75rem;
+}
+
+p + .button,
+p + a.button {
+  margin-top: 1.3rem;
 }
 
 .hero-visual,
@@ -541,6 +616,27 @@ h3 + p,
   padding-top: clamp(0.5rem, 2vw, 1rem);
 }
 
+.stacked-form-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.consultation-section.stacked-form-section {
+  grid-template-columns: 1fr;
+}
+
+.stacked-form-section > div:first-child {
+  max-width: 880px;
+}
+
+.stacked-form-section .contact-form {
+  max-width: 980px;
+  text-align: left;
+  width: min(100%, 980px);
+}
+
 .family-misconceptions-panel,
 .family-starting-points-panel {
   background:
@@ -728,6 +824,11 @@ h3 + p,
 .service-grid {
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-service-grid,
+.family-service-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -998,6 +1099,31 @@ h3 + p,
   width: min(100%, 1260px);
 }
 
+.contact-form-pair,
+.professional-card-pair {
+  align-items: stretch;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 1260px);
+}
+
+.contact-form-card,
+.professional-card-pair > * {
+  align-content: start;
+  display: grid;
+  gap: 1.15rem;
+}
+
+.contact-form-card .contact-form {
+  margin-top: 0.3rem;
+  padding: clamp(1.2rem, 2.3vw, 1.8rem);
+}
+
+.contact-form-card > p {
+  color: var(--cn-muted);
+}
+
 .contact-primary-grid {
   align-items: start;
   display: grid;
@@ -1096,6 +1222,15 @@ h3 + p,
   text-align: left;
 }
 
+.final-cta-band .newsletter-form label,
+.final-cta-band .newsletter-form .checkbox-line {
+  color: #fff;
+}
+
+.final-cta-band .newsletter-form input::placeholder {
+  color: rgba(26, 26, 26, 0.58);
+}
+
 .final-cta-band .hero-actions {
   justify-content: center;
 }
@@ -1105,6 +1240,10 @@ h3 + p,
   gap: 1.25rem;
   justify-items: center;
   padding-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+.professional-card-pair {
+  align-items: stretch;
 }
 
 .professionals-hero-inner {
@@ -1613,6 +1752,22 @@ textarea {
     font-weight: 900;
   }
 
+  .mobile-services-group,
+  .mobile-services-group > div {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .mobile-services-group > div {
+    border-left: 2px solid var(--cn-border);
+    margin-left: 0.3rem;
+    padding-left: 1rem;
+  }
+
+  .mobile-services-group > div a {
+    font-size: 0.95rem;
+  }
+
   .hero-section,
   .page-hero-inner,
   .centered-page-hero,
@@ -1623,8 +1778,10 @@ textarea {
   .professional-referral-section,
   .professional-referral-grid,
   .professional-next-step,
+  .professional-card-pair,
   .why-listen-panel,
   .contact-hero-panel,
+  .contact-form-pair,
   .contact-primary-grid,
   .contact-secondary-grid,
   .footer-inner {
